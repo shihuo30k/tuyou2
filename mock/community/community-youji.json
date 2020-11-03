@@ -1,0 +1,14 @@
+{
+  "code":1,
+  "data":{
+          "id":"1",
+          "nikename":"小小的人",
+          "info":"9个月印度旅行游记收获近52万点击量，他用文字记录238天旅行的起伏，用镜头与时间展现最真实的印度",
+          "imageurl":"http://yl.charmiot.com/travel_qygbz1/images/demo/u386.jpg",
+          "travelnote":{
+              "title":"我在印度旅行了九个月（连续4次入境印度，纯旅行238天）",
+              "grade":"3",
+              "imageurl":"http://yl.charmiot.com/travel_qygbz1/images/demo/u386.jpg"
+          }
+      }
+}

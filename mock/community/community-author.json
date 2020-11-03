@@ -1,0 +1,33 @@
+{
+  "data":[
+    {"use_id":1,
+      "picture":"http://yl.charmiot.com/travel_qygbz1/images/demo/u393.jpg",
+      "nick":"流浪的猫咪",
+      "grade":"初级用户",
+      "info":"用更轻快的方式，所见所闻作者4。",
+      "number":88888
+    },
+    {"use_id":2,
+      "picture":"http://yl.charmiot.com/travel_qygbz1/images/demo/u386.jpg",
+      "nick":"旅途中",
+      "grade":"高级用户",
+      "info":"用更轻快的方式，所见所闻作者4。",
+      "number":88888
+    },
+    {"use_id":3,
+      "picture":"http://yl.charmiot.com/travel_qygbz1/images/demo/u379.jpg",
+      "nick":"流浪的猫咪",
+      "grade":"初级用户",
+      "info":"用更轻快的方式，所见所闻作者4。",
+      "number":88888
+    },
+    {"use_id":4,
+      "picture":"http://yl.charmiot.com/travel_qygbz1/images/demo/u393.jpg",
+      "nick":"流浪的猫咪",
+      "grade":"初级用户",
+      "info":"用更轻快的方式，所见所闻作者4。",
+      "number":88888
+    }
+
+  ]
+}

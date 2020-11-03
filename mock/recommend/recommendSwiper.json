@@ -1,0 +1,36 @@
+{
+    "list":[
+        {
+            "id":1,
+            "type":"游记",
+            "title":"塞浦路斯穷游锦囊",
+            "local":"欧洲",
+            "author":"Ladygag",
+            "img":"http://yl.charmiot.com/travel_qygbz1/images/demo/u372.jpg"
+        },
+        {
+            "id":2,
+            "type":"游记",
+            "title":"上帝的泪水与礼花 / 瓦努阿图",
+            "local":"意大利",
+            "author":"Ladygag",
+            "img":"http://yl.charmiot.com/travel_qygbz1/images/demo/u379.jpg"
+        },
+        {
+            "id":3,
+            "type":"游记",
+            "title":"清迈美食地图2.0",
+            "local":"泰国清迈",
+            "author":"Ladygag",
+            "img":"http://yl.charmiot.com/travel_qygbz1/images/demo/u386.jpg"
+        },
+        {
+            "id":4,
+            "type":"游记",
+            "title":"带你揭秘爱尔兰的私藏笔记",
+            "local":"爱尔兰",
+            "author":"Likaiqiang",
+            "img":"http://yl.charmiot.com/travel_qygbz1/images/demo/u393.jpg"
+        }
+    ]
+}

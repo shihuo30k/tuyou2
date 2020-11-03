@@ -1,0 +1,17 @@
+{
+    "/api/list":"/list",
+    "/api/banner":"/banner",
+    "/api/travels":"/travels",
+    "/api/topic":"/topic",
+    "/api/inhot":"/inhot",
+    "/api/author":"/author",
+    "/api/subject":"/subject",
+    "/api/jnguide":"/jnguide",
+    "/api/jnlist":"/jnlist",
+    "/api/question":"/question",
+    "/api/countries":"/countries",
+    "/api/section":"/section",
+    "/api/qals":"/qals",
+    "/api/article":"/article"
+
+}

@@ -1,0 +1,36 @@
+{
+"data":[
+        {
+            "title": "推荐",
+            "type": "recommend"
+        },
+        {
+            "title": "中国",
+            "type": "china"
+        },
+        {
+            "title": "亚洲",
+            "type": "asia"
+        },
+        {
+            "title": "欧洲",
+            "type": "europe"
+        },
+        {
+            "title": "北美洲",
+            "type": "north_america"
+        },
+        {
+            "title": "大洋洲",
+            "type": "oceania"
+        },
+        {
+            "title": "非洲",
+            "type": "africa"
+        },
+        {
+            "title": "南美洲",
+            "type": "south_america"
+        }
+    ]
+}
