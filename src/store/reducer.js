@@ -15,12 +15,17 @@ import  {reducer as allCountries} from '../allCountries/index'
 
 import {reducer as personalArticles} from '../personalarticles/index'
 
+import {
+  reducer as video
+} from '../video-recomend/index'
+
 const rootReducer = combineReducers({
     recommend,
     community,
     destination,
     allCountries,
-    personalArticles
+    personalArticles,
+    video
 })
 
 export default rootReducer

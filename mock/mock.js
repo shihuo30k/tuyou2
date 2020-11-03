@@ -13,6 +13,8 @@ module.exports = function() {
         jnlist:require('./recommend/JN-data.json'),
         question:require('./recommend/question.json'),
         section: require('./recommend/SectionData.json'),
-        article:require('./destination/ariticle-data.json')
+        article:require('./destination/ariticle-data.json'),
+        videobanner:require('./recommend/video-banner.json'),
+        videolist:require('./recommend/video-data.json')
     }
 }

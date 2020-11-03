@@ -37,7 +37,6 @@ class App extends Component {
                 <Route path="/section" component={Section}></Route>
                 <Route path="/video" component={VideoContainer}></Route>
                 <Route component={ErrPage}></Route>
-                <Route component={ErrPage}></Route>
             </Switch>
         );
     }

@@ -1,0 +1,53 @@
+{
+    "list":[
+        {
+            "img":"https://pic.qyer.com/video_partner/poster/20200109/1578550157024",
+            "title":"Vlog7:只有local才会去的二手市场",
+            "video_url":"https://media.qyer.com/video/source/20200109/1578541517788",
+            "content":"只有周六才有的跳蚤市场，琳琅满目的小商品，特色小吃，体会最塞尔维亚的二手市场购物之旅。",
+            "user": {
+                "logo":"https://pic.qyer.com/inspire_partner/logo/20180716/1531722367339",
+                "name":"旅行囧记【美食篇】",
+                "sign":"打开美食次元的新世界",
+                "desc":"一档有着无厘头风格的旅游节目，囊括了时下最前沿、最流行的元素：旅游、综艺、搞笑、真人秀。让我们跟着《旅行囧记》开启一段啼笑皆非的欢乐之旅吧。"
+            }
+        },
+        {
+            "img":"https://pic.qyer.com/video_partner/poster/20191206/1575612253993",
+            "title":"第8话：在美娜多充满惊喜的探寻之旅",
+            "video_url":"https://media.qyer.com/video/source/20190516/1558001740177",
+            "content":"除了潜水，美娜多还充满了人文气息：耶稣飞天像、tomohon原始集市、Mahawu火山、《前任3》的取景地彩色房子，跟着鲸彩旅行的脚步去探寻惊喜吧。",
+            "user": {
+                "logo":"https://pic.qyer.com/inspire_partner/logo/20190116/1547626844033",
+                "name":"鲸彩旅行",
+                "sign":"发现旅行新方式",
+                "desc":"《鲸彩旅行》是HELLODIVE以潜水、陆地探索、新旅行生活方式等为主题的一档旅游节目。节目中出镜人物以固定团队加“新朋友”构成。他们将深入马来西亚、菲律宾、印尼、日本、墨西哥、埃及，甚至非洲等不同的目的地，探索奇妙的海底世界，深入当地生活，饱览绮丽的自然风光，品尝各种美食。在旅途中会发生各种故事，遇见不同的文化，甚至产生各种分歧。他们将在旅行中发现和成长，并把美妙的过程呈现给所有人。"
+            }
+        },
+        {
+            "img":"https://pic.qyer.com/video_partner/poster/20200805/1596599734795",
+            "title":"Journey Never Ends ！",
+            "video_url":"https://media.qyer.com/video/source/20200805/1596597854129",
+            "content":"疫情的突然来袭，让一切都停滞不前...人的距离仿佛被拉远，心却紧紧相连~但我们始终相信生活不会停止、旅行不会停止 ...",
+            "user": {
+                "logo":"https://pic.qyer.com/inspire_partner/logo/20200807/1596797639643",
+                "name":"会玩儿的中国人",
+                "sign":"用创造定义旅行",
+                "desc":"在这里能找到最精品的明星故事，体验旅行+的生活方式"
+            }
+        },
+        {
+            "img":"https://pic.qyer.com/video_partner/poster/20191206/1575612413604",
+            "title":"在这里，老北京四合院情结与现代美学和谐共处",
+            "video_url":"https://media.qyer.com/video/source/20190509/1557373420168",
+            "content":"选址于东城香饵胡同，这家现代民宿亦有着设计师的四合院情结。在这里，简洁利落的几何线条与老北京传统的灰墙红瓦和谐相处，形成独特的风景。",
+            "user": {
+                "logo":"https://pic.qyer.com/inspire_partner/logo/20180716/1531722341422",
+                "name":"知宿",
+                "sign":"慢享旅游的原味",
+                "desc":"一档民宿分享类节目。每期视频介绍一处民宿，让人们了解爱上这种慢节奏的民宿生活方式，更好地体验生活的乐趣。"
+            }
+        }
+    ]
+    
+}
