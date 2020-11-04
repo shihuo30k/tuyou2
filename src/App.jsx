@@ -13,6 +13,7 @@ import Section from './section/container/Section'
 import VideoContainer from './video-recomend/container/VideoContainer'
 import  ArticleDetials from './article-detials/ArticleDetails'
 import Recomindex from './recommendnotes/container/Recomindex'
+import Todaytopic from './todaytopic/container/Todaytopic'
 
 class App extends Component {
     state = {
@@ -40,6 +41,7 @@ class App extends Component {
                 <Route path="/video" component={VideoContainer}></Route>
                 <Route path="/articleDetials" component={ArticleDetials}></Route>
                 <Route path="/recomindex"  component={Recomindex}></Route>
+                <Route path="/todaytopic" component={Todaytopic}></Route>
                 <Route component={ErrPage}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
