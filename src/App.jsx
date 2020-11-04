@@ -11,6 +11,11 @@ import PersonalArticles from './personalarticles/container/PersonalArticles'
 import JnContainer from './jn-recommend/container/JnContainer'
 import Section from './section/container/Section'
 import VideoContainer from './video-recomend/container/VideoContainer'
+import  ArticleDetials from './article-detials/ArticleDetails'
+import Recomindex from './recommendnotes/container/Recomindex'
+import Todaytopic from './todaytopic/container/Todaytopic'
+import Footprint from '@h/mine/ui/FootprintUi'
+
 
 class App extends Component {
     state = {
@@ -36,7 +41,11 @@ class App extends Component {
                 <Route path="/jn" component={JnContainer}></Route>
                 <Route path="/section" component={Section}></Route>
                 <Route path="/video" component={VideoContainer}></Route>
-                <Route component={ErrPage}></Route>
+                <Route path="/articleDetials" component={ArticleDetials}></Route>
+                <Route path="/recomindex"  component={Recomindex}></Route>
+                <Route path="/todaytopic" component={Todaytopic}></Route>
+                {/* 我的足迹 */}
+                <Route path="/footprint" component={Footprint}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

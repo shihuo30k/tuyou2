@@ -15,5 +15,6 @@
     "/api/partner":"/partner",
     "/api/article":"/article",
     "/api/videobanner":"/videobanner",
-    "/api/videolist":"/videolist"
+    "/api/videolist":"/videolist",
+    "/api/recomindex":"/recomindex"
 }

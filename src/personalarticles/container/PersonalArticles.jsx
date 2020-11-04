@@ -1,5 +1,6 @@
 import React, { useState ,useCallback,useEffect} from 'react'
 import {useSelector,useDispatch} from 'react-redux'
+import { useHistory } from 'react-router-dom'
 import {PersonalArticlesContainer,TopTitleContainer} from './StyledPersonal.js'
 import actionCreator from '../actionCreator'
 
@@ -13,12 +14,25 @@ const  PersonalArticles = (props) => {
   const state = useSelector(state => state.get('personalArticles'))
  
   const curTag = useSelector(state => state.getIn(['personalArticles','single','curArticleTag']))
-  console.log(curTag)
+  // console.log(curTag)
 
   const stateX = state.toJS()
   const list = stateX.articleList.data
   
- 
+  const history = useHistory()
+
+  const GotoBack = useCallback(
+    () => {
+      history.goBack()
+    }
+  ,[history])
+
+  const GotoDetials = useCallback(
+    () => {
+      history.push('/articleDetials')
+    }
+  ,[history])
+
   const tagSum = []
   list && list.reduce((p,v,i) =>{
     return  v.content.map((value,i)=>{
@@ -51,7 +65,7 @@ const  PersonalArticles = (props) => {
           
   //   return item.tag === curTag
   // })
-  console.log(showArticleList)
+  // console.log(showArticleList)
 
 
   useEffect(() => {
@@ -81,7 +95,7 @@ const  PersonalArticles = (props) => {
     return (
       <PersonalArticlesContainer>
         <TopTitleContainer width="0 0 1PX 0" className="topTitle">
-          <svg t="1603952459060"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2076" ><path d="M967.111111 455.111111v113.777778H170.666667V455.111111z" fill="#3fcd90" p-id="2077"></path><path d="M477.866667 955.733333L34.133333 517.688889l443.733334-443.733333 79.644444 79.644444-364.088889 364.088889 364.088889 358.4z" fill="#3fcd90" p-id="2078"></path></svg>
+          <svg onClick={GotoBack} t="1603952459060"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2076" ><path d="M967.111111 455.111111v113.777778H170.666667V455.111111z" fill="#3fcd90" p-id="2077"></path><path d="M477.866667 955.733333L34.133333 517.688889l443.733334-443.733333 79.644444 79.644444-364.088889 364.088889 364.088889 358.4z" fill="#3fcd90" p-id="2078"></path></svg>
           <span>芬兰</span>
           <svg t="1604125626549"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1841" width="200" height="200"><path d="M189.882182 596.782545c-64.162909 0-116.363636-52.224-116.363636-116.363636 0-64.162909 52.200727-116.363636 116.363636-116.363636s116.363636 52.200727 116.363636 116.363636C306.245818 544.535273 254.045091 596.782545 189.882182 596.782545zM189.882182 410.577455c-38.493091 0-69.818182 31.325091-69.818182 69.818182s31.325091 69.818182 69.818182 69.818182 69.818182-31.325091 69.818182-69.818182S228.375273 410.577455 189.882182 410.577455zM517.12 596.782545c-64.139636 0-116.363636-52.224-116.363636-116.363636 0-64.162909 52.224-116.363636 116.363636-116.363636 64.186182 0 116.363636 52.200727 116.363636 116.363636C633.483636 544.535273 581.306182 596.782545 517.12 596.782545zM517.12 410.577455c-38.493091 0-69.818182 31.325091-69.818182 69.818182s31.325091 69.818182 69.818182 69.818182 69.818182-31.325091 69.818182-69.818182S555.613091 410.577455 517.12 410.577455zM834.117818 596.782545c-64.139636 0-116.363636-52.224-116.363636-116.363636 0-64.162909 52.224-116.363636 116.363636-116.363636 64.186182 0 116.363636 52.200727 116.363636 116.363636C950.481455 544.535273 898.304 596.782545 834.117818 596.782545zM834.117818 410.577455c-38.493091 0-69.818182 31.325091-69.818182 69.818182s31.325091 69.818182 69.818182 69.818182 69.818182-31.325091 69.818182-69.818182S872.610909 410.577455 834.117818 410.577455z" p-id="1842" fill="#bfbfbf"></path></svg>
         </TopTitleContainer>
@@ -121,7 +135,7 @@ const  PersonalArticles = (props) => {
                   {
                     showArticleList.map((value,i)=>{
                       return(
-                        <li key={i}>
+                        <li key={i} onClick={GotoDetials}>
                         <img src={value.imageurl} alt=""/>
                       <span className="articleContent">{value.content}</span>
                         <div className="bottomTips">

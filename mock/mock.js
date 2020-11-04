@@ -16,6 +16,7 @@ module.exports = function() {
         section: require('./recommend/SectionData.json'),
         article:require('./destination/ariticle-data.json'),
         videobanner:require('./recommend/video-banner.json'),
-        videolist:require('./recommend/video-data.json')
+        videolist:require('./recommend/video-data.json'),
+        recomindex:require('./recomindex/recomindex.json')
     }
 }

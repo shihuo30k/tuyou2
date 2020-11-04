@@ -23,7 +23,6 @@ export default (props) => {
         <AddressListWrap>
             {
                 currentData.length > 0 && currentData.map(value => {
-                    console.log(value)
                     return (
                         <div 
                         className='subList'
