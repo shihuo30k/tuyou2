@@ -11,6 +11,8 @@ import PersonalArticles from './personalarticles/container/PersonalArticles'
 import JnContainer from './jn-recommend/container/JnContainer'
 import Section from './section/container/Section'
 import VideoContainer from './video-recomend/container/VideoContainer'
+import  ArticleDetials from './article-detials/ArticleDetails'
+
 
 class App extends Component {
     state = {
@@ -36,6 +38,7 @@ class App extends Component {
                 <Route path="/jn" component={JnContainer}></Route>
                 <Route path="/section" component={Section}></Route>
                 <Route path="/video" component={VideoContainer}></Route>
+                <Route path="/articleDetials" component={ArticleDetials}></Route>
                 <Route component={ErrPage}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
