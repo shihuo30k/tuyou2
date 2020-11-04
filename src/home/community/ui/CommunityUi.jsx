@@ -35,6 +35,7 @@ export default function CommunityUi(props) {
       <NavBar></NavBar>
       <Topic
         list = {props.topicList}
+
       ></Topic>
       <TodayTravel
       ></TodayTravel>

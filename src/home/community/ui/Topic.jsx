@@ -1,17 +1,16 @@
 import React from 'react'
-
-// import {useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {
   TopicWrap
 } from './styledCommunity'
 
 const Topic = (props) => {
-  // const history=useHistory()
-  // const handleClick = () =>{
-  //   console.log(0)
-  //     // history.push("/todaytopic")
-  // }
+  
+  const history = useHistory()
 
+ const handleTdClick=()=>{
+    history.push("/todaytopic")
+  }
   return (
     <TopicWrap className="wrap" >
       <ul className="content" >
@@ -20,9 +19,9 @@ const Topic = (props) => {
           props.list && props.list.map(v =>(
             <li
              key={v.id}
-             
+             onClick={handleTdClick}
             >
-              <div onClick={()=>console.log(0)}>
+              <div >
                 <h2>今日话题</h2>
                 <h3>{v.title}</h3>
                 <h4>{v.date}</h4>

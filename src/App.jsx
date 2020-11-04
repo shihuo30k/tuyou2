@@ -15,6 +15,7 @@ import  ArticleDetials from './article-detials/ArticleDetails'
 import Recomindex from './recommendnotes/container/Recomindex'
 import Todaytopic from './todaytopic/container/Todaytopic'
 import Footprint from '@h/mine/ui/FootprintUi'
+import Visa from './visa/container/Visa'
 
 
 class App extends Component {
@@ -46,6 +47,8 @@ class App extends Component {
                 <Route path="/todaytopic" component={Todaytopic}></Route>
                 {/* 我的足迹 */}
                 <Route path="/footprint" component={Footprint}></Route>
+                <Route path="/visa" component={Visa}></Route>
+                <Route path="/todaytopic" component={Todaytopic}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

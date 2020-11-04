@@ -66,6 +66,7 @@ const TopicWrap = styled.div  `
       background-color: #fff;
       display:flex;
       justify-content: space-between;
+      z-index:99;
       div:first-child {
         h2{
           font-size:.13rem;

@@ -3,6 +3,7 @@ import border from '@a/styled/border'
 const PartnerWrap = styled.div ` 
   width:100%;
   height:100%;
+  overflow:hidden;
 `
 
 const SearchWrap = styled.div `
@@ -177,8 +178,8 @@ const AdressWrap = styled.div `
   position: absolute;
   top:0;
   left:0;
+  z-index:99;
   background-color:#fff;
-  z-index:9999;
   .am-search {
     height:.5rem;
     background-color: #fff;

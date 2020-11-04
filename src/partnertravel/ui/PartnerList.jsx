@@ -7,13 +7,14 @@ import svg1 from '@a/images/position.svg'
 import svg2 from '@a/images/calender.svg'
 export default function PartnerList(props) {
   let state = props.list.toJS().list
-  // console.log(props.list.toJS().list);
+  console.log(props.list.toJS().list);
   return (
     <PartnerListWrap>
       <ul>
 
         {
           state && state.map(v=>{
+            
             let tag =v.together_info.tag_desc
             let tag1 = tag.split("·")
             // console.log(tag1);
@@ -25,14 +26,14 @@ export default function PartnerList(props) {
         >
           <div className='top'>
             <p>
-              <img src="http://yl.charmiot.com/travel_qygbz1/images/demo/u372.jpg" alt=""/>
+              <img src={v.avator} alt=""/>
             </p>
-            <span>coco奶茶 </span>
+            <span>coco </span>
             <span>在21分钟前发布了</span>
           </div>
           <div className="bottom">
             <p>
-              <img src="http://yl.charmiot.com/travel_qygbz1/images/demo/u372.jpg" alt=""/>
+              <img src={v.cover} alt=""/>
             </p>
             <p>
               <span>{v.together_info.tag_desc}</span>
