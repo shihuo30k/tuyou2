@@ -15,7 +15,7 @@ export default function Selected(props) {
   const history = useHistory()
   let sta=props.list&& props.list.toJS().filters
   let hot = sta && sta.hot_place
-  console.log(hot);
+  // console.log(hot);
   let list = hot && hot.slice(0,16);
 const [state, setState] = useState({
   timeShow:false,
