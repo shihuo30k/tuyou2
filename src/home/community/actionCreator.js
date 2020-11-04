@@ -8,9 +8,17 @@ import {
   SETPARTNERTRAVEL,
   SETTRAVEL,
   SETAUTHOR,
-  SETQALS
+  SETQALS,
+  SETPRTNERSHIP
 } from './actionType'
-
+//结伴
+const setPsl = partnerShipList =>{
+  return{
+    type:SETPRTNERSHIP,
+    partnerShipList
+  }
+}
+//问答
 const setQaLs = qaLs =>{
   return{
     type:SETQALS,
@@ -84,7 +92,7 @@ const setTravelAsync = () => {
 const setPartnerTravelAsync = () => {
   return async (dispatch) => {
      let result =await get({
-       url:'/api//inhot'
+       url:'/api/inhot'
      })  
     //  console.log(result.data.list);
      dispatch(setPartnerTravel(result.data.list))
@@ -95,7 +103,7 @@ const setPartnerTravelAsync = () => {
 const setauthorAsync = () => {
   return async (dispatch) => {
      let result =await get({
-       url:'/api//author'
+       url:'/api/author'
      })  
     //  console.log(result.data.list);
      dispatch(setAuthor(result.data.data))
@@ -106,19 +114,34 @@ const setauthorAsync = () => {
 const setQaLsAsync = () => {
   return async (dispatch) => {
      let result =await get({
-       url:'/api//qals'
+       url:'/api/qals'
      })  
     //  console.log(result.data.data);
      dispatch(setQaLs(result.data.data))
   }
 }
+//旅伴
+const setPaetnerAsync = () => {
+  return async (dispatch) => {
+     let result =await get({
+       url:'/api/partner'
+     })  
+     dispatch(setPsl(result.data.data))
+    //  console.log(result.data);
+    //  dispatch(setQaLs(result.data.data))
+  }
+}
 
 
 export default{
+  setQaLs,
+  setAuthor,
+  setPsl,
   setTopicAsync,
   setTodayTravelAsync,
   setPartnerTravelAsync,
   setTravelAsync,
   setauthorAsync,
-  setQaLsAsync
+  setQaLsAsync,
+  setPaetnerAsync
 }
