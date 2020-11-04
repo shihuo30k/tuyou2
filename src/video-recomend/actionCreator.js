@@ -15,7 +15,7 @@ const loadVideoBannersAsync = () => {
         let result = await get({
             url:'/api/videobanner'
         })
-        console.log(result)
+        dispatch(loadVideoBannersSync(result.data.list))
     }
 }
 

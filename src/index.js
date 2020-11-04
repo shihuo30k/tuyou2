@@ -7,7 +7,7 @@ import React from 'react'
 import App from './App'
 import './assets/styles/reset.css'
 
-import './assets/styles/reset.css'
+import "../node_modules/video-react/dist/video-react.css"
 ReactDom.render(
     <Router>
         <Provider store={store}>
