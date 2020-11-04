@@ -47,7 +47,7 @@ class Community extends Component {
     //选中DOM中定义的 .wrapper 进行初始化
     new BScroll(wrap, {
       scrollX: true,  //开启横向滚动
-    
+      click: true,
     })
     const Partnerwrap = document.querySelector('.Partnerwrap')
     //选中DOM中定义的 .wrapper 进行初始化
@@ -60,6 +60,7 @@ class Community extends Component {
       scrollX: true,  //开启横向滚动
     })
   }
+     
   componentDidUpdate(){
     // console.log(this.props.todyTravelList);
     // console.log(this.props.TravelNotesList);
@@ -91,6 +92,7 @@ class Community extends Component {
                 authorList={this.props.authorList}
                 TravelNotesList={this.props.TravelNotesList}
                 pageSize ={this.state.pageSize}
+               onhandleTdClick= {this.handleTdClick}
                 >
                   
                 </CommunityUi>

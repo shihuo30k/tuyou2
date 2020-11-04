@@ -6,7 +6,7 @@ import {
 export default function Adress(props) {
   let state =props.list&& props.list.toJS().filters
   let hot = state && state.hot_place
-  console.log(hot);
+  // console.log(hot);
   let list = hot && hot.slice(0,16)
   return (
     <AdressWrap>

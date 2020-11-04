@@ -31,12 +31,14 @@ export default function NavBar() {
             <span>旅行结伴</span>
           </li>
         </NavLink>
+        <NavLink to='/visa'>
           <li>
           <p>
             <img src={img3} alt=""/>
           </p>
           <span>签证专版</span>
         </li>
+        </NavLink>
         <li>
           <p>
             <img src={img4} alt=""/>

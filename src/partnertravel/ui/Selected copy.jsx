@@ -21,6 +21,9 @@ const [state, setState] = useState({
   timeShow:false,
   adressShow:false,
   time:'不限',
+  adress:'不限',
+  pretime:'',
+  preadress:''
 })
  const handleAdressClick=()=>{
   setState(prestate=>({
@@ -30,17 +33,28 @@ const [state, setState] = useState({
  const handleTimeClick=()=>{
     setState(prestate=>({
       timeShow:!prestate.timeShow,
-      time:prestate.time
+      time:prestate.time,
+      pretime:prestate.time,
+      
     }))
   }
   const handleLiClick = (v) => {
     // console.log(v);
-    setState({
-      time:v
-    })
+    setState(prestate=>({
+      time:v,
+      pretime:v,
+      // adressShow:!prestate.adressShow
+    }))
   }
   const handleClear=()=>{
     history.goBack()
+  }
+  const handleNaClick = (name)=>{
+    setState(prestate=>({
+      time:prestate.pretime,
+      adressShow:!prestate.adressShow,
+      adress:name
+    }))
   }
   return (
     <>
@@ -52,7 +66,7 @@ const [state, setState] = useState({
         <span>目的地 --</span>
         <span
           onClick = {handleAdressClick}
-        >不限</span>
+        > {state.adress}</span>
         <img src={svg1} alt=""/>
       </div>
       <div  onClick={handleTimeClick}>
@@ -105,6 +119,7 @@ const [state, setState] = useState({
              return(
               <li
               key={v.id}
+              onClick={()=>handleNaClick(v.name)}
               >
               <p>
                 <img src={v.cover} alt=""/>
