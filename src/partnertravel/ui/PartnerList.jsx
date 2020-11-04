@@ -7,7 +7,7 @@ import svg1 from '@a/images/position.svg'
 import svg2 from '@a/images/calender.svg'
 export default function PartnerList(props) {
   let state = props.list.toJS().list
-  console.log(props.list.toJS().list);
+  // console.log(props.list.toJS().list);
   return (
     <PartnerListWrap>
       <ul>
