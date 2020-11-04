@@ -1,36 +1,35 @@
-import React from 'react'
-import {
-    Player,
-    ControlBar,
-    PlayToggle, // PlayToggle 播放/暂停按钮 若需禁止加 disabled
-    ReplayControl, // 后退按钮
-    ForwardControl,  // 前进按钮
-    CurrentTimeDisplay,
-    TimeDivider,
-    PlaybackRateMenuButton,  // 倍速播放选项
-    VolumeMenuButton
-  } from 'video-react';
+import React, {useEffect} from 'react'
+import BScroll from '@better-scroll/core';
+
+import {HotVideoWrap} from './StyledVideo'
 
 export default (props) => {
+  useEffect( () => {
+    new BScroll('.wrapper', {
+        scrollX: true, 
+      })
+  })
     return (
-        <div>
-            <Player
-            poster="https://pic.qyer.com/video/cover/20200916/1600250179253?imageView2/1/w/230/h/130"
-          >
-            <source
-              src='https://media.qyer.com/video/source/20200916/1600250267397'
-              type="video/mp4"
-            />
-            <ControlBar autoHide={false} disableDefaultControls={false}>
-              <ReplayControl seconds={10} order={1.1} />
-              <ForwardControl seconds={30} order={1.2} />
-              <PlayToggle />
-              <CurrentTimeDisplay order={4.1} />
-              <TimeDivider order={4.2} />
-              <PlaybackRateMenuButton rates={[5, 2, 1.5, 1, 0.5]} order={7.1} />
-              <VolumeMenuButton />
-            </ControlBar>
-          </Player>
+        <div style={{padding:".2rem .1rem", backgroundColor:'#fff'}}>
+          <h2 style={{marginBottom:'.2rem'}}>热门精选</h2>
+          <HotVideoWrap className="wrapper">
+            <ul>
+              {
+                props.videoData.map((value, index) => {
+                  return (
+                    <li key={index + value.type}>
+                      <div className="poster">
+                        <img src={value.poster} alt=""/>
+                      </div>
+                      <p className='content'>
+                        {value.title}
+                      </p>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </HotVideoWrap>
         </div>
     )
 }

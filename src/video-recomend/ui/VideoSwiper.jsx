@@ -10,7 +10,7 @@ export default (props) => {
     useEffect(() => {
         dispatch(loadVideoBannersAsync())
     },[dispatch])
-    console.log(videoBanners)
+    // console.log(videoBanners)
     return (
         <Carousel
         autoplay={true}
