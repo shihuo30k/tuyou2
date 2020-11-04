@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom"
 import {
     Container,
     ShowImg
@@ -18,9 +18,10 @@ class Destination extends Component {
                  </div>
              </Container>
              <ShowImg>
+               <Link to="/recomindex">
                 <div className="showImg">
                   <div>
-                    <img src="http://b1-q.mafengwo.net/s12/M00/07/F5/wKgED1vhj-WAE42sAAF8zDaPO4A56.jpeg?imageView2%2F2%2Fw%2F420%2Fh%2F300%2Fq%2F90" alt=""/>
+                    <Link to="/recomindex"><img src="http://b1-q.mafengwo.net/s12/M00/07/F5/wKgED1vhj-WAE42sAAF8zDaPO4A56.jpeg?imageView2%2F2%2Fw%2F420%2Fh%2F300%2Fq%2F90" alt=""/></Link>
                   </div>
                   <div>
                     <span>曼谷</span>
@@ -28,6 +29,7 @@ class Destination extends Component {
                   </div>
                   <span>Bangkok</span>
                 </div>
+               </Link>
              </ShowImg>
           </div>
         );
