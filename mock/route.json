@@ -12,6 +12,7 @@
     "/api/countries":"/countries",
     "/api/section":"/section",
     "/api/qals":"/qals",
+    "/api/partner":"/partner",
     "/api/article":"/article",
     "/api/videobanner":"/videobanner",
     "/api/videolist":"/videolist"

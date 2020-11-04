@@ -1,10 +1,13 @@
 import React ,{useState} from 'react'
 import { TabBar } from 'antd-mobile';
+import {useSelector} from 'react-redux'
 import {
   SelectedQAWrap
 } from './styledQa'
 import SelectedQA1 from './SelectedQA1'
+import SelectedQAList from './SelectedQAList'
 export default function SelectedQA(props) {
+  const qaList = useSelector(state => state.getIn(['community','qaLs']))
   const [state, setState] = useState(
     {selectedTab: 'redTab',
     hidden: false,
@@ -74,7 +77,9 @@ export default function SelectedQA(props) {
                 });
               }}
             >
-             
+             <SelectedQAList
+              list = {qaList}
+             ></SelectedQAList>
             </TabBar.Item>
              <TabBar.Item
               title="待回答问题"
@@ -97,7 +102,9 @@ export default function SelectedQA(props) {
                 });
               }}
             >
-             
+             <SelectedQAList
+              list = {qaList}
+             ></SelectedQAList>
             </TabBar.Item>
   
   

@@ -4,7 +4,8 @@ import {
   SETPARTNERTRAVEL,
   SETTRAVEL,
   SETAUTHOR,
-  SETQALS
+  SETQALS,
+  SETPRTNERSHIP
 } from './actionType'
 import {
   Map,List,fromJS
@@ -15,7 +16,8 @@ const defaultState = fromJS({
   partnerTravelList:{},
   travelList:{},
   authorList:[],
-  qaLs:[]
+  qaLs:[],
+  partnerShipList:{}
 })
 
 const reducer  = (state=defaultState,action) => {
@@ -38,6 +40,9 @@ const reducer  = (state=defaultState,action) => {
     
     case SETQALS :
       return state.set('qaLs',List(action.qaLs))
+    case SETPRTNERSHIP :
+      return state.set('partnerShipList',Map(action.partnerShipList))
+
     default:
       return state
   } 
