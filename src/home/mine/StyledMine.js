@@ -141,6 +141,77 @@ const Container = styled.div `
 
 `
 
+
+const Footprints = styled.div `
+    .di{
+        width:100%;
+        height:2.41rem;
+        background-color:rgb(216, 216, 216);
+    }
+
+    .ditu{
+        padding-top:.44rem;
+        width:100%;
+        height:1.88rem;
+        background-color:rgb(216, 216, 216);
+        img{
+            height:1.88rem;
+        }
+    }
+
+    .first{
+        width:100%;
+        height:2.2rem;
+        background-color:#fff;
+        border-bottom:1px solid #eee;
+        h1{
+            color:rgb(86, 86, 86);
+            width:100%;
+            height:.34rem;
+            line-height:.49rem;
+            margin-left:.15rem;
+        }
+                
+        .first1{
+            height:.2rem;
+            img{
+                height:1.14rem;
+                width:1.7rem;
+            }
+            .first3{
+                height:100%;
+                span{
+                    display:block;
+                    margin:0 .09rem;
+                    height:.35rem;
+                    border:1px solid #ccc;
+                    line-height:.35rem;
+                    color:rgb(182, 192, 216)
+                }
+            }
+        }
+    }
+
+    .am-grid .am-flexbox .am-flexbox-item .am-grid-item-content{
+        height:1.6rem;
+    }
+    `
+
+
+const NavBarRecommends = styled.div`
+     .am-navbar-title{
+         color:rgb(121, 118, 113);
+     }
+    .am-navbar-right{
+        img{
+            display:none;
+        }
+    }
+`
+
+
 export {
-    Container
+    Container,
+    Footprints,
+    NavBarRecommends
 }

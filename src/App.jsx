@@ -12,6 +12,7 @@ import JnContainer from './jn-recommend/container/JnContainer'
 import Section from './section/container/Section'
 import VideoContainer from './video-recomend/container/VideoContainer'
 import  ArticleDetials from './article-detials/ArticleDetails'
+import Footprint from '@h/mine/ui/FootprintUi'
 
 
 class App extends Component {
@@ -39,6 +40,8 @@ class App extends Component {
                 <Route path="/section" component={Section}></Route>
                 <Route path="/video" component={VideoContainer}></Route>
                 <Route path="/articleDetials" component={ArticleDetials}></Route>
+                {/* 我的足迹 */}
+                <Route path="/footprint" component={Footprint}></Route>
                 <Route component={ErrPage}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
