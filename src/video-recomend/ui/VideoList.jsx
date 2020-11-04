@@ -38,7 +38,7 @@ export default (props) => {
                                             className="itemList">
                                                 {
                                                     currentData[value].map((value, index) => {
-                                                        console.log(value)
+                                                        // console.log(value)
                                                         return (
                                                             <li key={index}>
                                                                 <div className='listPoster'>
