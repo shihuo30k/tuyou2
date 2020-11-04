@@ -14,6 +14,8 @@ import VideoContainer from './video-recomend/container/VideoContainer'
 import  ArticleDetials from './article-detials/ArticleDetails'
 import Recomindex from './recommendnotes/container/Recomindex'
 import Todaytopic from './todaytopic/container/Todaytopic'
+import Footprint from '@h/mine/ui/FootprintUi'
+
 
 class App extends Component {
     state = {
@@ -42,7 +44,8 @@ class App extends Component {
                 <Route path="/articleDetials" component={ArticleDetials}></Route>
                 <Route path="/recomindex"  component={Recomindex}></Route>
                 <Route path="/todaytopic" component={Todaytopic}></Route>
-                <Route component={ErrPage}></Route>
+                {/* 我的足迹 */}
+                <Route path="/footprint" component={Footprint}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

@@ -1,12 +1,25 @@
-import React from 'react'
+
+import React,{useCallback} from 'react'
 
 import { SwipeAction, List } from 'antd-mobile';
+
+import { useHistory,withRouter } from 'react-router-dom'
 
 import {
     Container
 } from '../StyledMine'
 
-export default function myList2 (){
+ const MyList2 = ()=>{
+
+    let history = useHistory()
+
+    const handleClick=useCallback(() => {
+        return () => {
+            history.push('/footprint')
+            
+        }
+    },[history])
+
     return (
         <Container>
         <div>
@@ -53,6 +66,7 @@ export default function myList2 (){
             <List.Item
                 className="List1-6"
                 arrow="horizontal"
+                onClick={handleClick()}
             >
                 我的足迹
             </List.Item>
@@ -82,13 +96,12 @@ export default function myList2 (){
                 旅行实验室
             </List.Item>
             </SwipeAction>
-
-
-
-            
         </List>
 
         </div>
         </Container>
     )
 }
+
+
+export default withRouter(MyList2)
