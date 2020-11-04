@@ -21,5 +21,6 @@ export default styled.div`
     }
     .am-navbar-title {
         font-weight: bold;
+        white-space: normal;
     }
 `

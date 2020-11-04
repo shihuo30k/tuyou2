@@ -21,7 +21,7 @@ export default (props) => {
             {
                 videoBanners && videoBanners.map((value, index) => {
                     return (
-                        <img src={value.img} key={index} alt="" onClick={() => {history.push('/video_detail', {value})}} onLoad={() => {dispatchEvent(new Event('resize'))}}/>
+                        <img src={value.img} key={index} alt="" onClick={() => {history.push('/video_detail', {value, type:'banner'})}} onLoad={() => {dispatchEvent(new Event('resize'))}}/>
                     )
                 })
             }

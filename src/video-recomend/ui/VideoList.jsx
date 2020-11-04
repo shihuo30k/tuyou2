@@ -1,11 +1,13 @@
 import React from 'react'
 import _ from 'lodash'
+import { useHistory } from 'react-router-dom'
 import {VideoListWrap, ItemListWrap} from './StyledVideo'
 
 export default (props) => {
     const arr = props.videoData
     const resultObj = _.groupBy(arr,'type')
     const types = Object.keys(resultObj)
+    const history = useHistory()
     // const data = Object.values(resultObj)
     // console.log(arr)
     return (
@@ -40,7 +42,9 @@ export default (props) => {
                                                     currentData[value].map((value, index) => {
                                                         // console.log(value)
                                                         return (
-                                                            <li key={index}>
+                                                            <li
+                                                            onClick={() => {history.push('/video_detail', {value, type:'list'})}} 
+                                                            key={index}>
                                                                 <div className='listPoster'>
                                                                     <img src={value.poster} alt=""/>
                                                                 </div>
