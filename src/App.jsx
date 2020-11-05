@@ -17,6 +17,8 @@ import Todaytopic from './todaytopic/container/Todaytopic'
 import Footprint from '@h/mine/ui/FootprintUi'
 import Login from '@h/mine/ui/Login'
 
+import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
+import Visa from './visa/container/Visa'
 
 
 class App extends Component {
@@ -50,6 +52,8 @@ class App extends Component {
                 <Route path="/footprint" component={Footprint}></Route>
                 {/* 登录 */}
                 <Route path="/login" component={Login}></Route>
+                <Route path="/video_detail" component={VideoDetailContainer}></Route>
+                <Route path="/visa" component={Visa}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

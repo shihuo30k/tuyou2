@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {connect} from 'react-redux'
 import {
     TabBar
 } from 'antd-mobile'
@@ -10,7 +10,21 @@ import Community from './community/container/Community'
 
 import Mine from './mine/contaier/contaiers'
 import {Container} from './StyledHome'
+import {changeSelectedTab} from './actionCreator'
 
+@connect(
+  state => {
+    // console.log(state.getIn(["homeSelected", "selectedTab"]))
+    return {
+      selectedTab:state.getIn(["homeSelected", "selectedTab"])
+    }
+  },
+  disptch => ({
+    changeTab(currentTab){
+      disptch(changeSelectedTab(currentTab))
+    }
+  })
+)
 class Home extends Component {
     state = {
         selectedTab: 'my',
@@ -20,7 +34,7 @@ class Home extends Component {
     render() {
         return (
             <Container
-            selected={this.state.selectedTab}
+            selected={this.props.selectedTab}
             >
               <div style={this.state.fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}>
               <TabBar
@@ -44,11 +58,13 @@ class Home extends Component {
                     background: 'url(http://yl.charmiot.com/travel_qygbz1/images/demo/u511.svg) center center /  21px 21px no-repeat' }}
                   />
                   }
-                  selected={this.state.selectedTab === 'recommend'}
+                  selected={this.props.selectedTab === 'recommend'}
                   onPress={() => {
-                    this.setState({
-                      selectedTab: 'recommend',
-                    });
+                    this.props.changeTab('recommend')
+                    // this.setState({
+                    //   ...this.state,
+                    //   selectedTab: 'recommend',
+                    // });
                   }}
                 >
                   <Recommend></Recommend>
@@ -70,11 +86,13 @@ class Home extends Component {
                   }
                   title="目的地"
                   key="destination"
-                  selected={this.state.selectedTab === 'destination'}
+                  selected={this.props.selectedTab === 'destination'}
                   onPress={() => {
-                    this.setState({
-                      selectedTab: 'destination',
-                    });
+                    this.props.changeTab('destination')
+                    // this.setState({
+                    //   ...this.state,
+                    //   selectedTab: 'destination',
+                    // });
                   }}
                 >
                   <Destination></Destination>
@@ -96,11 +114,13 @@ class Home extends Component {
                   }
                   title="社区"
                   key="community"
-                  selected={this.state.selectedTab === 'community'}
+                  selected={this.props.selectedTab === 'community'}
                   onPress={() => {
-                    this.setState({
-                      selectedTab: 'community',
-                    });
+                    this.props.changeTab('community')
+                    // this.setState({
+                    //   ...this.state,
+                    //   selectedTab: 'community',
+                    // });
                   }}
                 >
                     <Community></Community>
@@ -110,11 +130,13 @@ class Home extends Component {
                   selectedIcon={{ uri: 'http://yl.charmiot.com/travel_qygbz1/images/demo/u528.svg' }}
                   title="我的"
                   key="my"
-                  selected={this.state.selectedTab === 'my'}
+                  selected={this.props.selectedTab === 'my'}
                   onPress={() => {
-                    this.setState({
-                      selectedTab: 'my',
-                    });
+                    this.props.changeTab('my')
+                    // this.setState({
+                    //   ...this.state,
+                    //   selectedTab: 'my',
+                    // });
                   }}
                 >
                   <Mine></Mine>
