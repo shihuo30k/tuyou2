@@ -24,7 +24,7 @@ const DetailWrap = styled.div `
       margin-top:.18rem;
 
     }
-    p{
+    .title{
       font-size:.17rem;
       color:#333;
       font-weight:700;
@@ -76,33 +76,107 @@ const DetailWrap = styled.div `
       margin:.4rem 0 .28rem 0;
     }
     ul{
-    li{
-      height:2.7rem;
-      h2{
-        font-weight:normal;
-        p{
-        width:.4rem;
-        height:.4rem;
-        img{
-          width:100%;
-          height:100%;
-          border-radius:50%;
+      li{
+
+        .liContent{
+            display:flex;
+            align-items:center;
+            margin-bottom:.1rem;
+            .liP{
+            width:.4rem;
+            height:.4rem;
+            margin-right:.04rem;
+            img{
+              width:100%;
+              height:100%;
+              border-radius:50%;
+            }
+          }
+          span{
+            font-size:.16rem;
+            color:#333;
+
+          }
+        }
+
+        .qaContent{
+          font-size:.15rem;
+          color:#333;
+          line-height:.32rem;
+        }
+        .box{
+          display:flex;
+          margin-top:.16rem;
+          align-items:center;
+          position: relative;
+          p{
+            padding:.04rem .12rem;
+            margin-right:.14rem;
+            color:#58BC7F;
+            img{
+              margin-right:.02rem;
+            }
+          }
+          span{
+            font-size:.12rem;
+            color:#aeaeae;
+            position:absolute;
+            right:.2rem;
+          }
+        }
+      
+      }
+    }
+
+    .qaList{
+      background-color: #f2f2f2;
+      margin-bottom:.2rem;
+      h4{
+        font-size:.16rem;
+        color:#333;
+        margin:.2rem 0;
+      }
+      li{
+        height:.44rem;
+        background-color: #fff;
+        padding:.22rem .12rem;
+        margin:.1rem .16rem .1rem 0;
+        div{
+          display:flex;
+          img{
+            margin-right:.04rem;
+          }
+          p{
+            color:#333;
+            font-size:.16rem;
+            font-weight:700;
+          }
+        }
+        b{
+          display:block;
+          height:.38rem;
+          color:#5e5e5e;
+          font-size:.14rem;
+          margin-top:.08rem;
+          padding-left:.06rem;
+          font-weight:normal;
         }
       }
-      }
-    
     }
-  }
   }
  
 `
 const BorderDiv = border(styled.div ``)
+const BorderP = border(styled.p ``)
 
 const EllipsisDiv = ellipsis(styled.div ``)
 const EllipsisP = ellipsis(styled.p ``)
+const EllipsisB = ellipsis(styled.b ``)
 export{
   DetailWrap,
   BorderDiv,
+  BorderP,
   EllipsisDiv,
-  EllipsisP
+  EllipsisP,
+  EllipsisB
 }

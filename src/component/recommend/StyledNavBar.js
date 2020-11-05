@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export default styled.div`
     width:100%;
     position:fixed;
-    z-index:10;
+    z-index:90;
     .am-navbar-left {
         img {
             width: .3rem;
@@ -21,5 +21,6 @@ export default styled.div`
     }
     .am-navbar-title {
         font-weight: bold;
+        white-space: normal;
     }
 `

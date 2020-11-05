@@ -22,7 +22,7 @@ export default function SelectedQAList(props) {
   // console.log(state.pageSize);
 
   const handleClick = (v)=>{
-    history.push("/qadetail",v)
+    history.push("/qadetail",{v,list:props.list})
   }
   return (
     <div>

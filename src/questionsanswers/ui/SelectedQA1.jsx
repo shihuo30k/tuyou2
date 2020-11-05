@@ -49,7 +49,7 @@ useEffect(() => {
  
 }, [dispatch])
 const handleClick = (v)=>{
-  history.push("/qadetail",v)
+  history.push("/qadetail",{v,list:state})
 }
     // console.log(state.toJS());
   // console.log(props.questionList.toJS());

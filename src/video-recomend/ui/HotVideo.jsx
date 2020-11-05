@@ -1,12 +1,16 @@
 import React, {useEffect} from 'react'
 import BScroll from '@better-scroll/core';
+import {useHistory} from 'react-router-dom'
 
 import {HotVideoWrap} from './StyledVideo'
 
 export default (props) => {
+  const history = useHistory()
   useEffect( () => {
     new BScroll('.wrapper', {
         scrollX: true, 
+        preventDefault:false,
+        tap: true
       })
   })
     return (
@@ -17,7 +21,9 @@ export default (props) => {
               {
                 props.videoData.map((value, index) => {
                   return (
-                    <li key={index + value.type}>
+                    <li
+                    onClick={()=>{history.push('/video_detail',{value, type:'list'})}}
+                    key={index + value.type}>
                       <div className="poster">
                         <img src={value.poster} alt=""/>
                       </div>
