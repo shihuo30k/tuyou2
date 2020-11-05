@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import {useSelector} from 'react-redux'
+import {useHistory} from 'react-router-dom'
 import {AticalSectionWrap, ElliP, ElliDiv} from './StyledSection'
 import {get} from '@u/http'
 
 export default (props) => {
     const [list, setList] = useState([])
+    const history = useHistory()
     const currentPage = useSelector(state => state.getIn(['recommend', 'travalListState', 'travalPage']))
     useEffect(() => {
         async function getData(){
@@ -25,6 +27,7 @@ export default (props) => {
                     list && list.map(item => {
                         return (
                             <li
+                            onClick={() => {history.push('/articleDetials')}}
                             key={item.id}
                             >
                                 <div className='image'>

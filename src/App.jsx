@@ -18,6 +18,7 @@ import Footprint from '@h/mine/ui/FootprintUi'
 import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
 import Visa from './visa/container/Visa'
 import Login from '@h/mine/ui/Login'
+import {CreateSection} from './section-create'
 
 
 
@@ -54,6 +55,7 @@ class App extends Component {
                 <Route path="/visa" component={Visa}></Route>
                 {/* 登录 */}
                 <Route path="/login" component={Login}></Route>
+                <Route path="/tobe_author" component={CreateSection}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
