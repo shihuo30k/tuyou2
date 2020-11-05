@@ -1,7 +1,11 @@
 import React from 'react'
+import {useHistory} from 'react-router-dom'
+import SpecialListUi from '../ui/SpecialListUi'
 
 export default (props) => {
+    const history = useHistory()
+    const data = history.location.state.value
     return(
-        <div>专题列表</div>
+        <SpecialListUi specialData={data}></SpecialListUi>
     )
 }
