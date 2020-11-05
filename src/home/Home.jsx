@@ -13,7 +13,7 @@ import {Container} from './StyledHome'
 
 class Home extends Component {
     state = {
-        selectedTab: 'recommend',
+        selectedTab: 'my',
         hidden: false,
         fullScreen: true,
     }

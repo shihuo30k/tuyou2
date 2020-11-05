@@ -15,6 +15,8 @@ import  ArticleDetials from './article-detials/ArticleDetails'
 import Recomindex from './recommendnotes/container/Recomindex'
 import Todaytopic from './todaytopic/container/Todaytopic'
 import Footprint from '@h/mine/ui/FootprintUi'
+import Login from '@h/mine/ui/Login'
+
 
 
 class App extends Component {
@@ -46,6 +48,8 @@ class App extends Component {
                 <Route path="/todaytopic" component={Todaytopic}></Route>
                 {/* 我的足迹 */}
                 <Route path="/footprint" component={Footprint}></Route>
+                {/* 登录 */}
+                <Route path="/login" component={Login}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
