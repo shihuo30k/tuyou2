@@ -19,6 +19,7 @@ import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
 import Visa from './visa/container/Visa'
 import Login from '@h/mine/ui/Login'
 import {CreateSection} from './section-create'
+import {SpecialListContainer} from './speciaList'
 
 
 
@@ -56,6 +57,8 @@ class App extends Component {
                 {/* 登录 */}
                 <Route path="/login" component={Login}></Route>
                 <Route path="/tobe_author" component={CreateSection}></Route>
+                {/* 首页专题列表 */}
+                <Route path="/special_list" component={SpecialListContainer}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

@@ -17,6 +17,7 @@ module.exports = function() {
         article:require('./destination/ariticle-data.json'),
         videobanner:require('./recommend/video-banner.json'),
         videolist:require('./recommend/video-data.json'),
-        recomindex:require('./recomindex/recomindex.json')
+        recomindex:require('./recomindex/recomindex.json'),
+        zhuanti:require('./recommend/zhuanti_data.json')
     }
 }
