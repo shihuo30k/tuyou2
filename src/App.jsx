@@ -17,7 +17,7 @@ import Todaytopic from './todaytopic/container/Todaytopic'
 import Footprint from '@h/mine/ui/FootprintUi'
 import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
 import Visa from './visa/container/Visa'
-
+import QuestionDetail from './questiondetial/container/QuestionDetail'
 
 class App extends Component {
     state = {
@@ -51,6 +51,7 @@ class App extends Component {
                 <Route path="/video_detail" component={VideoDetailContainer}></Route>
                 <Route path="/visa" component={Visa}></Route>
                 <Route path="/todaytopic" component={Todaytopic}></Route>
+                <Route path="/qadetail" component={QuestionDetail}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

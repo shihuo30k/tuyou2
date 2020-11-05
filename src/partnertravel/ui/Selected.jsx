@@ -13,7 +13,7 @@ const arr =['全部','本周末','1周内','1个月内']
 export default function Selected(props) {
   let sta=props.list&& props.list.toJS().filters
   let hot = sta && sta.hot_place
-  console.log(props.list.toJS());
+  // console.log(props.list.toJS());
   let list = hot && hot.slice(0,16);
 const [state, setState] = useState({
   timeShow:false,
@@ -84,13 +84,15 @@ const [state, setState] = useState({
         <img src={svg2} alt=""/>
       </div>
 
-      <div className='pubtime'>
+      {state.timeShow && <div className='pubtime'>
         <ul >
           
           {
             
-            state.timeShow && arr.map((v,i)=>{
+            arr.map((v,i)=>{
+             
               return(
+                
                 <li
                 key={i}
                 onClick={()=>handleLiClick(v)}
@@ -102,12 +104,14 @@ const [state, setState] = useState({
             })
           }
         </ul>
-      </div>
+      </div>}
     </SelectedWrap>
     <PartnerList
       list={props.list}
     ></PartnerList>
-    {state.adressShow ? <AdressWrap>
+    {state.adressShow ? <AdressWrap
+    style={{height:window.innerHeight+100}}
+    >
     
     <SearchBar
        placeholder="搜索地点"

@@ -2,6 +2,7 @@ import React ,{useEffect}from 'react'
 import {
   useDispatch,useSelector
 } from 'react-redux'
+import {useHistory} from 'react-router-dom'
 import {
   SelectedQA1Wrap,
   BorderP,
@@ -22,6 +23,7 @@ const arr = [
   '中国', '中国', '中国', '中国', '中国','中国',  '中国', '中国','中国',
 ]
 export default function SelectedQA1(props) {
+  const history = useHistory()
 const dispatch = useDispatch()
 const state = useSelector(state => state.getIn(['community','qaLs']))
 const authorList= useSelector(state => state.getIn(['community','authorList']))
@@ -46,7 +48,10 @@ useEffect(() => {
   })()
  
 }, [dispatch])
-    // console.log(state);
+const handleClick = (v)=>{
+  history.push("/qadetail",v)
+}
+    // console.log(state.toJS());
   // console.log(props.questionList.toJS());
   // console.log(props.pageSize);
  
@@ -79,6 +84,7 @@ useEffect(() => {
       return(
         <li
         key={v.question_views}
+        onClick={()=>handleClick(v)}
         >
           <h2>{v.question_title}</h2>
          { v.answer_image && <h3>

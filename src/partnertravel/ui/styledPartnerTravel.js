@@ -61,11 +61,21 @@ const SelectedWrap = border(styled.div `
     width:100%;
     position: absolute;
     right:0;
-    top:1rem;
+    top:.95rem;
     z-index:999; 
+    animation:mymo .5s ;
+    @keyframes mymo
+{
+    0% {top:.85rem;}
+    
+    100%{top:.95rem;}
+}
+
+
     ul{
       width:100%;
       background-color: #fff;
+    
       .active{
         color:#FF168F;
       }
@@ -92,6 +102,7 @@ const PartnerListWrap = styled.div `
   width:100%;
   ul{
     width:100%;
+    overflow-y:scroll;
     li{
       width:100;
       height:1.8rem;
@@ -173,13 +184,20 @@ const PartnerListWrap = styled.div `
 `
 const AdressWrap = styled.div ` 
   width:100%;
-  height:100%;
-  overflow:hidden;
   position: absolute;
+  overflow:hidden;
   top:0;
   left:0;
-  z-index:99;
+  z-index:99999;
   background-color:#fff;
+  animation:mymove .5s ;
+
+  @keyframes mymove
+{
+    0% {top:6.6rem;}
+    
+    100%{top:0;}
+}
   .am-search {
     height:.5rem;
     background-color: #fff;
