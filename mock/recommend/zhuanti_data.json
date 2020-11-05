@@ -3,53 +3,64 @@
         {
             "cate":"新鲜甩尾",
             "sign":"每日不可不看的好货",
-            "list":[{
+            "list":[
+                {
                 "img": "https://pic.qyer.com/FiNHkPC6wQO7XJU0gQSHm0U_Hhnt?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/FiNHkPC6wQO7XJU0gQSHm0U_Hhnt?imageView2/1/w/640/h/360",
                 "title": "【双11专享特惠】【三亚海棠湾民生威斯汀度假酒店】3天2晚2999起！送早餐下午茶！ 网红C位",
                 "num": "3599元起"
             },
             {
                 "img": "https://pic.qyer.com/FjzDAKkV1hvyMu5wYRLYhzMwp7dy?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/FjzDAKkV1hvyMu5wYRLYhzMwp7dy?imageView2/1/w/640/h/360",
                 "title": "（五星，三亚）亚特兰蒂斯酒店2晚（含2大2小早餐+无限畅玩水世界和水族馆+免费迷你吧+接送机+家庭/情侣/亲子游）",
                 "num": "3500元起"
             },
             {
                 "img": "https://pic.qyer.com/FuhdPX3UQ2HCEtMR0Fwz1ygz-bmI?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/FuhdPX3UQ2HCEtMR0Fwz1ygz-bmI?imageView2/1/w/640/h/360",
                 "title": "（五星，三亚）三亚湾康年酒店2-3晚（闺蜜游套餐+无边网红泳池+双人早餐+下午茶+接机服务）",
                 "num": "2399元起"
             },
             {
                 "img": "https://pic.qyer.com/Fp0yeeo2y5ei00ugaQrYFwBfJrgd?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/Fp0yeeo2y5ei00ugaQrYFwBfJrgd?imageView2/1/w/640/h/360",
                 "title": "（国际品牌五星）拉萨圣地天堂洲际大饭店4晚+羊卓雍措一日游（高级双床房，含早）",
                 "num": "3300元起"
             },
             {
                 "img": "https://pic.qyer.com/FiEsoqimL4B1LCqu-MlsGuqOj729?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/FiEsoqimL4B1LCqu-MlsGuqOj729?imageView2/1/w/640/h/360",
                 "title": "上海/南京/扬州直飞三亚5天往返含税机票（多航司可选+含10KG托运行李额）",
                 "num": "669元起"
             },
             {
                 "img": "https://pic.qyer.com/FjrhqKYmyE3iYc0Zyb50wQDDLMGq?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/FjrhqKYmyE3iYc0Zyb50wQDDLMGq?imageView2/1/w/640/h/360",
                 "title": "全国桔子酒店10晚通用卡（周末不加价+近50家酒店可选+品牌酒店+可入住10晚+有效期一年）",
                 "num": "1680元起"
             },
             {
                 "img": "https://pic.qyer.com/Fq079qsD60Ne2mRLEHtLgYIG487f?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/Fq079qsD60Ne2mRLEHtLgYIG487f?imageView2/1/w/640/h/360",
                 "title": "（五星，西藏拉萨）拉萨松赞林卡酒店（藏式风情+弥散式供氧+含早餐+连住优惠+代订西藏四店松赞山居+香格里松赞林卡+德钦+梅里山居）",
                 "num": "190元起"
             },
             {
                 "img": "https://pic.qyer.com/Fl4n5xgd1oggj6y0EX_kEY2_5wfu?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/Fl4n5xgd1oggj6y0EX_kEY2_5wfu?imageView2/1/w/640/h/360",
                 "title": "泸沽湖+猪槽船+里格半岛+纯玩2日跟团游（6-14人精品商务小团）",
                 "num": "360元起"
             },
             {
                 "img": "https://pic.qyer.com/FircPisKjmbtGRUFNp8tx3E7ilP-?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/FircPisKjmbtGRUFNp8tx3E7ilP-?imageView2/1/w/640/h/360",
                 "title": "玉龙雪山大索道+印象丽江+玉龙雪山纯玩一日游+赠防寒服氧气",
                 "num": "220元起"
             },
             {
                 "img": "https://pic.qyer.com/FujARg_rtZthMfnMjLeLE8r0j-gR?imageView2/1/w/275/h/185",
+                "big_img": "https://pic.qyer.com/FujARg_rtZthMfnMjLeLE8r0j-gR?imageView2/1/w/640/h/360",
                 "title": "贵州旅游贵阳黄果树瀑布西江千户苗寨荔波梵净山旅游包车自由行",
                 "num": "1700元起"
             }]
@@ -60,31 +71,37 @@
             "list":[
                 {
                     "img": "https://pic.qyer.com/Fh1P6aR89wsnqJEElcqJXON3Bl2Q?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fh1P6aR89wsnqJEElcqJXON3Bl2Q?imageView2/1/w/640/h/360",
                     "title": "贵阳天河潭+夜郎谷一日游-VIP一单一团·穿越历史隧道/身临夜郎古国·0购物·不拼团/独立私密·安全出游·一环内免费接送",
                     "num": "580元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Fl_Pibz4qtITFktDWSh5a_WCQD9Q?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fl_Pibz4qtITFktDWSh5a_WCQD9Q?imageView2/1/w/640/h/360",
                     "title": "贵阳+天河潭+丹寨+西江2日游-VIP一单一团·风情古寨·鸟笼制作/苗服拍照·蜡染体验·24H接机·黔山秀水·千户夜景",
                     "num": "1600元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FvmZ_SRSxGavf9oPzG7uWvwq6koa?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FvmZ_SRSxGavf9oPzG7uWvwq6koa?imageView2/1/w/640/h/360",
                     "title": "[定制游]全国往返北海涠洲岛5日自由行（火山地质公园+网红打卡地+赶海拾贝+水上运动+可调整天数/航班/高铁+全国出发）",
                     "num": "2880元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FsSzNCKdrixHy6-h-74QMlzB0tpq?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FsSzNCKdrixHy6-h-74QMlzB0tpq?imageView2/1/w/640/h/360",
                     "title": "[定制游]全国往返浙江莫干山4日自由行（中国四大避暑胜地+综艺宠儿+妻子的浪漫旅行同款+网红透明无边泳池+萤火虫基地+裸心堡+裸心谷+莫干山风景区+庾村文化集市+义远有机农场+Discovery冒险探索基地+郡安里马场+特色网红民宿（赠路书攻略+可调整天数/航班/高铁+全国出发）",
                     "num": "1850元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FuNe298zDMTw-E4X_f0dhC8RAOPo?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FuNe298zDMTw-E4X_f0dhC8RAOPo?imageView2/1/w/640/h/360",
                     "title": "[定制游]全国往返安徽黄山西递宏村5日自由行（黄山山顶日出星空+舌尖上的中国屯溪老街+西递镇+徽韵宏村镇夜色+西海大峡谷+汉服旅拍+抖音网红小火车+高山森林温泉（赠路书攻略+可调整天数/航班/高铁+全国出发）",
                     "num": "1980元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FopR145fd76uV0qcWhgEoyQiIMng?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FopR145fd76uV0qcWhgEoyQiIMng?imageView2/1/w/640/h/360",
                     "title": "[定制游]全国往返甘肃6日定制自由行（敦煌莫高窟+大漠谣戈壁沙滩+玉门关+鸣沙山+月牙泉+锁阳城+雅丹魔鬼城+榆林窟（赠路书攻略+可调整天数/航班/高铁+全国出发）",
                     "num": "2280元起"
                 }
@@ -96,56 +113,67 @@
             "list":[
                 {
                     "img": "https://pic.qyer.com/Fpeo5ZDXPcpe5PmQNoEqBnHsxPb3?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fpeo5ZDXPcpe5PmQNoEqBnHsxPb3?imageView2/1/w/640/h/360",
                     "title": "【定制游】全国出发往返西藏拉萨6天5晚自由行（卡若拉冰川徒步+观雅鲁藏布江大峡谷+坠入人间的蓝宝石羊卓雍措+佛教圣地布达拉宫+“小江南”卡定沟+林芝嘎拉桃花村+田园风光鲁朗小镇+羊八井泡地热温泉+网红同款《行走的餐厅》+索松村星空泡泡屋）",
                     "num": "2880元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FkGP32CKCPh92Kf2MzSROS3s9Yyx?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FkGP32CKCPh92Kf2MzSROS3s9Yyx?imageView2/1/w/640/h/360",
                     "title": "【泡温泉观银杏】深圳出发腾冲5天双飞游（全国各地接团+升级一晚豪华温泉酒店+代订机票+代订高端酒店）",
                     "num": "2699元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Fhti21kZRRvMchy7_HJfxwUq3JTu?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fhti21kZRRvMchy7_HJfxwUq3JTu?imageView2/1/w/640/h/360",
                     "title": "【可可西里】广州出发青海纯玩团双飞八天8天游（青海湖+金银滩大草原+东台吉乃尔湖+茶卡盐湖+翡翠湖+水上雅丹）",
                     "num": "3999元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FmFK1tbr7NiJTkjMDh1fM7X9ZttF?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FmFK1tbr7NiJTkjMDh1fM7X9ZttF?imageView2/1/w/640/h/360",
                     "title": "广州出发西双版纳6天游（野象谷+原始森林公园+傣族园+勐泐大佛寺+大益庄园+哈尼文化园+傣家村寨+湄公河游船）",
                     "num": "1399元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Fndebkhmv4ApABzx759HWHHYazuY?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fndebkhmv4ApABzx759HWHHYazuY?imageView2/1/w/640/h/360",
                     "title": "珠海出发海南三亚+海口5天游（全程五星酒店+玉带滩+亚龙湾国际玫瑰谷+天涯海角+石梅湾风景区）",
                     "num": "1499元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Figx8JMhyg0advZ20iKtxrHdXoYk?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Figx8JMhyg0advZ20iKtxrHdXoYk?imageView2/1/w/640/h/360",
                     "title": "广州出发云南普者黑6天5晚游（三生三世十里桃花拍摄地+古城建水+领略红土地大观+碧色寨+弥勒温泉酒店+红酒庄园）",
                     "num": "1988元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Fl4n5xgd1oggj6y0EX_kEY2_5wfu?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fl4n5xgd1oggj6y0EX_kEY2_5wfu?imageView2/1/w/640/h/360",
                     "title": "泸沽湖+猪槽船+里格半岛+纯玩2日跟团游（6-14人精品商务小团）",
                     "num": "360元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FircPisKjmbtGRUFNp8tx3E7ilP-?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FircPisKjmbtGRUFNp8tx3E7ilP-?imageView2/1/w/640/h/360",
                     "title": "玉龙雪山大索道+印象丽江+玉龙雪山纯玩一日游+赠防寒服氧气",
                     "num": "220元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FujARg_rtZthMfnMjLeLE8r0j-gR?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FujARg_rtZthMfnMjLeLE8r0j-gR?imageView2/1/w/640/h/360",
                     "title": "贵州旅游贵阳黄果树瀑布西江千户苗寨荔波梵净山旅游包车自由行",
                     "num": "1700元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Fh1P6aR89wsnqJEElcqJXON3Bl2Q?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fh1P6aR89wsnqJEElcqJXON3Bl2Q?imageView2/1/w/640/h/360",
                     "title": "贵阳天河潭+夜郎谷一日游-VIP一单一团·穿越历史隧道/身临夜郎古国·0购物·不拼团/独立私密·安全出游·一环内免费接送",
                     "num": "580元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Fl_Pibz4qtITFktDWSh5a_WCQD9Q?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fl_Pibz4qtITFktDWSh5a_WCQD9Q?imageView2/1/w/640/h/360",
                     "title": "贵阳+天河潭+丹寨+西江2日游-VIP一单一团·风情古寨·鸟笼制作/苗服拍照·蜡染体验·24H接机·黔山秀水·千户夜景",
                     "num": "1600元起"
                 }
@@ -157,26 +185,31 @@
             "list":[
                 {
                     "img": "https://pic.qyer.com/FhgBhoPcz7zfT6ZlivEfmcwrJTSm?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FhgBhoPcz7zfT6ZlivEfmcwrJTSm?imageView2/1/w/640/h/360",
                     "title": "（五星，迪庆）高山别庄德钦酒店/高山别庄香格里拉酒店",
                     "num": "700元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FnbKVVTfMPwvur4-4eHoT5BnSthT?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FnbKVVTfMPwvur4-4eHoT5BnSthT?imageView2/1/w/640/h/360",
                     "title": "玉龙雪山大索道+印象丽江+玉龙雪山纯玩一日游+赠防寒服氧气",
                     "num": "2999元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FircPisKjmbtGRUFNp8tx3E7ilP-?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FircPisKjmbtGRUFNp8tx3E7ilP-?imageView2/1/w/640/h/360",
                     "title": "贵阳+天河潭+丹寨+西江2日游-VIP一单一团·风情古寨·鸟笼制作/苗服拍照·蜡染体验·24H接机·黔山秀水·千户夜景",
                     "num": "220元起"
                 },
                 {
                     "img": "https://pic.qyer.com/Fl_Pibz4qtITFktDWSh5a_WCQD9Q?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/Fl_Pibz4qtITFktDWSh5a_WCQD9Q?imageView2/1/w/640/h/360",
                     "title": "（五星，杭州）慈溪杭州湾世纪金源大饭店1晚套餐（宁波方特+杭州湾海皮岛水世界+自助晚餐+杭州湾国家湿地公园）",
                     "num": "1600元起"
                 },
                 {
                     "img": "https://pic.qyer.com/FjjLWf3lAlLrtcWKs8PztNtmE4Rp?imageView2/1/w/275/h/185",
+                    "big_img": "https://pic.qyer.com/FjjLWf3lAlLrtcWKs8PztNtmE4Rp?imageView2/1/w/640/h/360",
                     "title": "广州出发云南普者黑6天5晚游（三生三世十里桃花拍摄地+古城建水+领略红土地大观+碧色寨+弥勒温泉酒店+红酒庄园）",
                     "num": "480元起"
                 }
