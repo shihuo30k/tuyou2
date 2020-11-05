@@ -50,7 +50,6 @@ class App extends Component {
                 <Route path="/footprint" component={Footprint}></Route>
                 <Route path="/video_detail" component={VideoDetailContainer}></Route>
                 <Route path="/visa" component={Visa}></Route>
-                <Route path="/todaytopic" component={Todaytopic}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
