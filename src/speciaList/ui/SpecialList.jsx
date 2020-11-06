@@ -1,15 +1,20 @@
 import React from 'react'
+import {useHistory} from 'react-router-dom'
 import {SpecialUlWrap,ListContentEll,ListPriceBor} from './StyledSpecialList'
 
 export default (props) => {
     const list = props.list
+    const history = useHistory()
     return (
         <SpecialUlWrap>
             <ul>
                 {
                     list.map((value, index) => {
                         return(
-                            <li key={index}>
+                            <li 
+                            key={index}
+                            onClick={() => {history.push('/special_detail',{value})}}
+                            >
                                 <div className="image">
                                     <img src={value.img} alt=""/>
                                 </div>

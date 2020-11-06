@@ -24,12 +24,11 @@ const SpecialUlWrap = styled.div`
     padding-top: 3rem;
     flex:1;
     ul {
-        width: 100%;
         padding: 0 .1rem;
         display: flex;
         flex-wrap: wrap;
         li {
-            width: 46%;
+            width: 48.5%;
             background-color: #fff;
             margin-bottom: .1rem;
             &:nth-child(odd){
@@ -45,7 +44,6 @@ const SpecialUlWrap = styled.div`
                 padding:.1rem;
             }
             .content {
-                /* padding: .1rem; */
                 margin-bottom: .1rem;
                 font-family: '微软雅黑';
                 font-weight: 400;

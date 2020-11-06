@@ -18,5 +18,6 @@
     "/api/videolist":"/videolist",
     "/api/recomindex":"/recomindex",
     "/api/zhuanti":"/zhuanti",
-    "/api/newselected":"/newselected"
+    "/api/newselected":"/newselected",
+    "/api/visa":"/visa"
 }

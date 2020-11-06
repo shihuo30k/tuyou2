@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useCallback} from 'react'
 
 import { Logins } from '../StyledMine'
+
+
+import { useHistory,withRouter } from 'react-router-dom'
 
 import login1 from '@a/images/login-1.svg'
 import login2 from '@a/images/login-2.svg'
@@ -8,8 +11,26 @@ import login3 from '@a/images/login-3.svg'
 import login4 from '@a/images/login-4.svg'
 
 const Login = () => {
+
+
+
+    let history = useHistory()
+
+    const handlerClick=useCallback(() => {
+        return () => {
+            history.push('/ResetPassword')
+            
+        }
+    },[history])
+
+    const handleClick = useCallback(() => {
+        return () => {
+            history.push('/CreateUser')
+        }
+    },[history])
     return (
         <Logins>
+            <div>
         <div className="guanbi">
             <img src={login2} alt=""/>
         </div>
@@ -27,16 +48,21 @@ const Login = () => {
                     <input type="text" placeholder="登录密码" />
                 </label>
                 <div className="password">
-                <span>忘记密码</span>
+                <span 
+                   onClick={handlerClick()}
+                >忘记密码</span>
                 </div>
                 <button type="submit">登录</button>
                 <div className="new">
-                    <span>创建账户</span>
+                    <span
+                       onClick={handleClick()}
+                    >创建账户</span>
                 </div>
             </form>
+        </div>
         </div>
         </Logins>
     )
 }
 
-export default Login;
+export default withRouter(Login);

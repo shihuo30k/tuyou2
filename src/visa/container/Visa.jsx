@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React, {} from 'react'
+import  VisaUi from '../ui/VisaUi'
 
-export default class Visa extends Component {
-  render() {
+const Visa = ()=> {
+  
     return (
       <div>
-        visa
+        <VisaUi></VisaUi>
       </div>
     )
-  }
+  
 }
+
+export default Visa
