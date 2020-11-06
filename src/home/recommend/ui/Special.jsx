@@ -1,12 +1,16 @@
 import React, {useEffect} from 'react'
+import {useHistory} from 'react-router-dom'
 import BScroll from '@better-scroll/core';
 import {SpecialWrap} from './StyledRecommend'
 
 export default (props) => {
-    const specialList = props.travalList.slice(3, 9)
+    const specialData = props.specialData
+    const history = useHistory()
+    // console.log(specialData)
     useEffect(() => {
         new BScroll(".specialScroll",{
             scrollX: true,
+            preventDefault:false
         })
     })
     return (
@@ -15,16 +19,17 @@ export default (props) => {
             <div className="specialScroll">
                 <ul>
                     {
-                        specialList.map(value => {
+                        specialData.map(value => {
                             return(
                                 <li
-                                key= {value.data.id}
+                                onClick={() => {history.push('/special_list',{value})}}
+                                key= {value.cate}
                                 >
                                     <div className="images">
-                                        <img src={value.data.image} alt=""/>
-                                    <p>锦鲤养成计划</p>
+                                        <img src={value.list[0].img} alt=""/>
+                                        <p>{value.cate}</p>
                                     </div>
-                                    <h2>打卡赢大礼</h2>
+                                    <h2>{value.sign}</h2>
                                 </li>
                             )
                         })

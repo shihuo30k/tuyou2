@@ -148,25 +148,27 @@ const SpecialWrap = styled.div`
         width: max-content;
         li {
             margin-left:.1rem;
+            width: 1.3rem;
             .images {
                 position:relative;
-                width: 1.3rem;
+                width: 100%;
                 height: .8rem;
                 overflow: hidden;
                 border-radius: .08rem;
                 img {
                     width: 100%;
+
                 }
             }
             p {
+                width:100%;
+                text-align: center;
                 position:absolute;
                 color:#fff;
                 font-size: .17rem;
                 font-weight: bold;
                 top: 50%;
-                left: 50%;
-                margin-top: -.1rem;
-                margin-left: -.5rem;
+                margin-top: -.08rem;
             }
             h2 {
                 color: #868686;

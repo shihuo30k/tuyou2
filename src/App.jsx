@@ -19,7 +19,10 @@ import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
 import Visa from './visa/container/Visa'
 import QuestionDetail from './questiondetial/container/QuestionDetail'
 import Login from '@h/mine/ui/Login'
-
+import {CreateSection} from './section-create'
+import {SpecialListContainer} from './speciaList'
+import NewSelected from './newselected/container/NewSelected'
+import AllSelected from './allselected/container/AllSelected';
 
 
 class App extends Component {
@@ -57,6 +60,11 @@ class App extends Component {
                 <Route path="/qadetail" component={QuestionDetail}></Route>
                 {/* 登录 */}
                 <Route path="/login" component={Login}></Route>
+                <Route path="/tobe_author" component={CreateSection}></Route>
+                {/* 首页专题列表 */}
+                <Route path="/special_list" component={SpecialListContainer}></Route>
+                <Route path="/newselected" component={NewSelected}></Route>
+                <Route path="/allselected" component={AllSelected}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

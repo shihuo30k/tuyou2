@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import {useHistory} from 'react-router-dom'
 import {get} from '@u/http'
 import {SrWrap} from './StyledSection'
 
@@ -23,6 +24,7 @@ export default () => {
             bColor:'#e5d6eb'
         }
     ])
+    const history = useHistory()
     useEffect(() => {
         async function loadSectionData() {
             let result = await get({
@@ -43,6 +45,7 @@ export default () => {
                         // console.log(value)
                         return (
                             <li
+                            onClick={() => {history.push('/pa')}}
                             key={value.id}
                             style={{backgroundColor: colorList[index % 4].tColor}}
                             >
