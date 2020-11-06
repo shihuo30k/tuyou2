@@ -20,6 +20,7 @@ import Visa from './visa/container/Visa'
 import Login from '@h/mine/ui/Login'
 import {CreateSection} from './section-create'
 import {SpecialListContainer} from './speciaList'
+import {SpecialDetailContainer} from './special-detail'
 
 
 
@@ -59,6 +60,7 @@ class App extends Component {
                 <Route path="/tobe_author" component={CreateSection}></Route>
                 {/* 首页专题列表 */}
                 <Route path="/special_list" component={SpecialListContainer}></Route>
+                <Route path="/special_detail" component={SpecialDetailContainer}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
