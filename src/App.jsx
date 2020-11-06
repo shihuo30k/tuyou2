@@ -16,7 +16,8 @@ import Recomindex from './recommendnotes/container/Recomindex'
 import Todaytopic from './todaytopic/container/Todaytopic'
 import Footprint from '@h/mine/ui/FootprintUi'
 import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
-import Visa from './visa/container/Visa'
+import {Visa} from './visa/index'
+
 import {CreateSection} from './section-create'
 import {SpecialListContainer} from './speciaList'
 

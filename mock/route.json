@@ -17,5 +17,6 @@
     "/api/videobanner":"/videobanner",
     "/api/videolist":"/videolist",
     "/api/recomindex":"/recomindex",
-    "/api/zhuanti":"/zhuanti"
+    "/api/zhuanti":"/zhuanti",
+    "/api/visa":"/visa"
 }
