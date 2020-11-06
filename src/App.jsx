@@ -18,6 +18,11 @@ import Footprint from '@h/mine/ui/FootprintUi'
 import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
 import {Visa} from './visa/index'
 
+import Login from '@h/mine/ui/Login'
+import {CreateSection} from './section-create'
+import {SpecialListContainer} from './speciaList'
+
+
 
 class App extends Component {
     state = {
@@ -50,7 +55,11 @@ class App extends Component {
                 <Route path="/footprint" component={Footprint}></Route>
                 <Route path="/video_detail" component={VideoDetailContainer}></Route>
                 <Route path="/visa" component={Visa}></Route>
-                <Route path="/todaytopic" component={Todaytopic}></Route>
+                {/* 登录 */}
+                <Route path="/login" component={Login}></Route>
+                <Route path="/tobe_author" component={CreateSection}></Route>
+                {/* 首页专题列表 */}
+                <Route path="/special_list" component={SpecialListContainer}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

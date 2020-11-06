@@ -2,7 +2,8 @@ import {
     LOADBANNERDATA,
     LOADTRAVALDATA, 
     LOADQUESTIONDATA,
-    CHANGETRAVALLISTSTATE
+    CHANGETRAVALLISTSTATE,
+    LOADSPECIALDATA
 } from './actionTypes'
 import { Map, List } from 'immutable'
 
@@ -10,6 +11,7 @@ const defaultState = Map({
     bannerList: [],
     travalList: [],
     questionList: List([]),
+    specialData:[],
     travalListState:{
         refreshing: false,
         travalPage:1,
@@ -26,6 +28,8 @@ const reducer = (state = defaultState, action) => {
             return state.set('questionList', action.questionList)
         case CHANGETRAVALLISTSTATE:
             return state.set('travalListState', action.travalListState)
+        case LOADSPECIALDATA:
+            return state.set('specialData', action.specialData)
         default:
             return state
     }

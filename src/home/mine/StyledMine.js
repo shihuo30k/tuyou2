@@ -198,6 +198,87 @@ const Footprints = styled.div `
     `
 
 
+const Logins = styled.div`
+   
+      width:100%;
+      height:100%;
+      background-color:#fff;
+   .guanbi{
+       position:absolute;
+       right:.4rem;
+       top:.4rem;
+   }
+   .touxiang{
+       text-align:center;
+       padding-top:.7rem;
+       img{
+        width:.7rem;
+        height:.7rem;
+       }
+   }
+   form{
+       margin-left:15%;
+       margin-top:.1rem;
+       display:flex;
+       flex-direction:column;
+       justify-content: center;
+       align-items: center;
+       text-align:center;
+       width:70%;
+       height:2.3rem;
+       label{
+           width:100%;
+           height:.5rem;
+           text-aligin:center;
+           display:flex;
+           border-bottom:1px solid #ccc;
+           
+           img{
+               padding-left:.2rem;
+           }
+           input{
+               flex:1;
+               margin-left:.2rem;
+               border:none;
+               font-size:.12rem;
+           }
+       }
+       .password{
+           text-align:right;
+           width:100%;
+           height:1rem;
+           padding-top:.15rem;
+           padding-bottom:.15rem;
+           font-size:.1rem;
+           background-color:#fff;
+           span{
+               color:rgb(40, 195, 132);
+           }
+       }
+       button{
+           width:100%;
+           height:2rem;
+           border:none;
+           color:#fff;
+           border-radius:.2rem;
+           background-color:rgb(40, 195, 132);
+       }
+       .new{
+        text-align:center;
+        width:100%;
+        height:1rem;
+        padding-top:.15rem;
+        font-size:.1rem;
+        background-color:#fff;
+        span{
+            color:rgb(40, 195, 132);
+        }
+       }
+   }
+`
+
+
+
 const NavBarRecommends = styled.div`
      .am-navbar-title{
          color:rgb(121, 118, 113);
@@ -213,5 +294,6 @@ const NavBarRecommends = styled.div`
 export {
     Container,
     Footprints,
-    NavBarRecommends
+    NavBarRecommends,
+    Logins
 }

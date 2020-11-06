@@ -245,8 +245,100 @@ const TopChangeContainer = styled.div`
   
 
 `
+const ShowListContainer = styled.div`
+  position:absolute;
+  top:.9rem;
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  ul{
+    li{
+      position: relative;
+      height: 1.3rem;
+      padding: 0.15rem 0;
+      border-radius: 0.04rem;
+      border-bottom: 0.01rem solid rgba(0,0,0,.1);
+      box-sizing: border-box;
+      .imgContainer{
+        position: absolute;
+        left: 0;
+        top: .15rem;
+        width: 1rem;
+        height: 1rem;
+        overflow: hidden;
+        border-radius: 0.04rem;
+        img{
+          position: absolute;
+          border-radius: 0.04rem;
+          left: 50%;
+          -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+          display: block;
+          height: 100%;
+        }
+        ._34lmwXYTdx5aWbX2rPMKGo {
+          font-size:.12rem;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 22px;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          word-break: break-all;
+          text-overflow: ellipsis;
+          background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.7)));
+          background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));
+          color: #fff;
+          line-height: .22rem;
+          text-align: center;
+          padding: 0 0.07rem;
+          box-sizing: border-box;
+        }
+      }
+      .resContent{
+        height: 100%;
+        color: rgba(0,0,0,.4);
+        margin-left: 1.13rem;
+        margin-right: 0;
+        font-weight: 400;
+        .topshow{
+          font-size: .14rem;
+          line-height: .19rem;
+          color: rgba(0,0,0,.8);
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        p{
+          .saled{
+            line-height: .12rem;
+            position: absolute;
+            bottom: .15rem;
+            left: 0;
+            font-size:.12rem;
+            margin-left: 1.13rem;
+          }
+          .price{
+            line-height:.12rem;
+            position: absolute;
+            right: 0;
+            bottom: .15rem;
+            em{
+              font-size: .19rem;
+              color: #ff7466;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+`
 
 export {
   VisaContainer,
-  TopChangeContainer
+  TopChangeContainer,
+  ShowListContainer
 }
