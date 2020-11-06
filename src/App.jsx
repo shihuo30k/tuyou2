@@ -20,6 +20,7 @@ import {Visa} from './visa/index'
 
 import {CreateSection} from './section-create'
 import {SpecialListContainer} from './speciaList'
+import {SpecialDetailContainer} from './special-detail'
 
 import LoginUi from '@h/mine/ui/LoginUi'
 import ResetPassword from '@h/mine/ui/ResetPassword'
@@ -66,6 +67,7 @@ class App extends Component {
                 <Route path="/ResetPassword" component={ResetPassword}></Route>
                 {/* 创建用户 */}
                 <Route path="/CreateUser" component={CreateUser}></Route>
+                <Route path="/special_detail" component={SpecialDetailContainer}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
