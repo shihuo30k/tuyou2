@@ -21,6 +21,9 @@ import Login from '@h/mine/ui/Login'
 import {CreateSection} from './section-create'
 import {SpecialListContainer} from './speciaList'
 
+import LoginUi from '@h/mine/ui/LoginUi'
+import ResetPassword from '@h/mine/ui/ResetPassword'
+import CreateUser from '@h/mine/ui/CreateUser'
 
 
 class App extends Component {
@@ -54,11 +57,15 @@ class App extends Component {
                 <Route path="/footprint" component={Footprint}></Route>
                 <Route path="/video_detail" component={VideoDetailContainer}></Route>
                 <Route path="/visa" component={Visa}></Route>
-                {/* 登录 */}
-                <Route path="/login" component={Login}></Route>
                 <Route path="/tobe_author" component={CreateSection}></Route>
                 {/* 首页专题列表 */}
                 <Route path="/special_list" component={SpecialListContainer}></Route>
+                {/* 登录 */}
+                <Route path="/login" component={LoginUi}></Route>
+                {/* 重置密码 */}
+                <Route path="/ResetPassword" component={ResetPassword}></Route>
+                {/* 创建用户 */}
+                <Route path="/CreateUser" component={CreateUser}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
