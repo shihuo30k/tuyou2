@@ -68,7 +68,7 @@ class Recommend extends Component {
                 id:4,
                 title:'结伴',
                 svg:nav4,
-                url:'/partner'
+                url:'/pt'
             },
             {
                 id:5,
