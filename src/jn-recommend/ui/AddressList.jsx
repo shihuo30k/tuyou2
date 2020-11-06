@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
+import {useHistory} from 'react-router-dom'
 import { get } from '@u/http'
 import {AddressListWrap} from './StyledJnRecommend'
 
 export default (props) => {
     const [currentData, setList] = useState({})
-
+    const history = useHistory()
     useEffect(() => {
         const loadData = async () => {
             let result = await get({
@@ -33,7 +34,9 @@ export default (props) => {
                                 {
                                     value.groupDests.map((subValue,i) => {
                                         return (
-                                            <li key={i}>
+                                            <li 
+                                            onClick={() => {history.push('/recomindex')}}
+                                            key={i}>
                                                 {
                                                     subValue.imageUrl ? <>
                                                         <div className='image'>

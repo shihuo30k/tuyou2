@@ -1,12 +1,13 @@
 import React, {useState, useLayoutEffect} from 'react'
 import {SectionTitleWrap} from './StyledSection'
+import {useHistory} from 'react-router-dom'
 
 export default (props) => {
     const [titleStr] = useState({
         pStr1:['分','享'],
         pStr2:['用','创','造','定','义','旅','行']
     })
-
+    const history = useHistory()
     useLayoutEffect(() => {
         let i = 0
         const titleWords = document.querySelectorAll('.title p')
@@ -45,7 +46,7 @@ export default (props) => {
                     })
                 }
             </div>
-            <span className="how">
+            <span className="how" onClick={() => {history.push('/tobe_author')}}>
                 如何成为专栏作家{">"}
             </span>
         </SectionTitleWrap>
