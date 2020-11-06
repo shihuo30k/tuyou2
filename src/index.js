@@ -7,6 +7,7 @@ import store from './store'
 import React from 'react'
 import App from './App'
 import './assets/styles/reset.css'
+import 'react-calendar/dist/Calendar.css'
 
 ReactDom.render(
     <Router>

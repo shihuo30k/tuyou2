@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
 import SpecialDetailUi from '../ui/SpecialDetailUi'
 
 export default (props) => {
+    const [data, setDate] = useState({})
     const {value} = useHistory().location.state
-    console.log(value)
+    useEffect(() => {
+        setDate(value)
+    },[value])
     return (
-        <SpecialDetailUi data={value}></SpecialDetailUi>
+        <SpecialDetailUi data={data}></SpecialDetailUi>
     )
 }
