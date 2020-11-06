@@ -10,9 +10,10 @@ import login2 from '@a/images/login-2.svg'
 import login3 from '@a/images/login-3.svg'
 import login4 from '@a/images/login-4.svg'
 
+
+
+
 const Login = () => {
-
-
 
     let history = useHistory()
 
@@ -28,6 +29,15 @@ const Login = () => {
             history.push('/CreateUser')
         }
     },[history])
+
+    const handleLogin = () => {
+        return (
+            console.log(0)
+        )
+    }
+
+
+
     return (
         <Logins>
             <div>
@@ -38,10 +48,11 @@ const Login = () => {
             <div className="touxiang">
                 <img src={login1} alt=""/>
             </div>
-            <form action="">
-                <label htmlFor="">
+            <form action=""  id="advForm">
+                <label htmlFor="" >
                     <img src={login3} alt=""/>
-                    <input type="text" placeholder="手机号码"/>
+                    <input type="text"  placeholder="手机号码"
+                    />
                 </label>
                 <label htmlFor="">
                     <img src={login4} alt=""/>
@@ -52,7 +63,9 @@ const Login = () => {
                    onClick={handlerClick()}
                 >忘记密码</span>
                 </div>
-                <button type="submit">登录</button>
+                <button type="submit"
+                onClick={handleLogin()}
+                >登录</button>
                 <div className="new">
                     <span
                        onClick={handleClick()}
