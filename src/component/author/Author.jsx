@@ -1,5 +1,8 @@
 import React from 'react'
 import {
+  NavLink
+} from 'react-router-dom'
+import {
   AuthorWrap,
   AuthorWraper,
   Follow
@@ -11,7 +14,7 @@ export default function Author(props) {
     <>
     <AuthorWraper>
       <div>{props.leftTitle}</div>
-      <div>{props.rightTitle} &gt;</div>
+      <NavLink to="/mysubscibe"> <div>{props.rightTitle} &gt;</div></NavLink>
     </AuthorWraper> 
     
     <AuthorWrap className="authorWrap">
