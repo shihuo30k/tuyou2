@@ -5,13 +5,13 @@ import {VisaContainer} from './StyledVisa'
 import ShowList from './ShowList'
 
 
-const VisaUi = ()=> {
+const VisaUi = (props)=> {
   
     return (
       <VisaContainer>
         <SearchX></SearchX>
-        <TopChange></TopChange>
-        <ShowList></ShowList>
+        <TopChange {...props}></TopChange>
+        <ShowList {...props}></ShowList>
       </VisaContainer>
     )
   

@@ -20,6 +20,8 @@ import {
   reducer as video
 } from '../video-recomend/index'
 
+import {reducer as visa} from '../visa/index' 
+
 import { reducer as homeSelected } from '../home'
 
 const rootReducer = combineReducers({
@@ -30,7 +32,8 @@ const rootReducer = combineReducers({
     personalArticles,
     recomindexreducer,
     video,
-    homeSelected
+    homeSelected,
+    visa
 })
 
 export default rootReducer
