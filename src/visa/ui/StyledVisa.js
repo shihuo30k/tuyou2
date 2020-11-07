@@ -246,12 +246,15 @@ const TopChangeContainer = styled.div`
 
 `
 const ShowListContainer = styled.div`
+  touch-action: none;
   position:absolute;
   top:.9rem;
   padding: 0 0.15rem;
   box-sizing: border-box;
   ul{
+    
     li{
+      
       position: relative;
       height: 1.3rem;
       padding: 0.15rem 0;

@@ -157,9 +157,9 @@ const TopChange = props => {
            </div>
           </div>
           <div className={curLiMenu === 3 ? "" : "active"}>
-            <ul>
-              <li  onClick={changeSort} className="sort-one active1">综合排序</li>
-              <li  onClick={changeSort} className="sort-two">销量排序</li>
+            <ul onClick={changeSort}>
+              <li  onClick={props.changeSortx} className="sort-one active1">综合排序</li>
+              <li  onClick={props.changeSortx} className="sort-two">销量排序</li>
             </ul>
           </div>
           <div className={curLiMenu === 4 ?  "" : "active"}>
