@@ -7,13 +7,13 @@ import actionCreator from '../actionCreator'
 
 const Visa = ()=> {
 
-  const state = useSelector(state => state.get('visa'))
-  console.log(state)
+  // const state = useSelector(state => state.get('visa'))
+  // console.log(state)
 
   const visaList = useSelector(state => state.getIn(['visa','visaList']))
 
   let visaListShow = visaList.toJS().data
-  console.log(visaListShow)
+  // console.log(visaListShow)
 
   
     const compare =(property)=>{
