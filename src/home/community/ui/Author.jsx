@@ -30,6 +30,7 @@ export default function Author(props) {
               return(
                 <li
                   key={v.use_id}
+                 
                 >
                 <h2>
                   <img src={v.picture} alt=""/>

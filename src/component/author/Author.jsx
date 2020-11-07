@@ -1,6 +1,7 @@
 import React from 'react'
 import {
-  NavLink
+  NavLink,
+  useHistory
 } from 'react-router-dom'
 import {
   AuthorWrap,
@@ -9,6 +10,7 @@ import {
 } from './styledAuthor'
 
 export default function Author(props) {
+  const history = useHistory()
   // console.log(props.list);
   return (
     <>
@@ -26,6 +28,7 @@ export default function Author(props) {
               return(
                 <li
                   key={v.use_id}
+                  onClick={()=>history.push('/pa')}
                 >
                 <h2>
                   <img src={v.picture} alt=""/>

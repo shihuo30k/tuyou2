@@ -20,7 +20,7 @@ import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
 import NewSelected from './newselected/container/NewSelected'
 import AllSelected from './allselected/container/AllSelected';
 import MySubscribe from './mysubscribe/container/MySubscribe'
-
+import QuestionDetail from './questiondetial/container/QuestionDetail'
 
 import {Visa} from './visa/index'
 
@@ -64,6 +64,7 @@ class App extends Component {
                 <Route path="/newselected" component={NewSelected}></Route>
                 <Route path="/allselected" component={AllSelected}></Route>
                 <Route path="/mysubscibe" component={MySubscribe}></Route>
+                <Route path="/qadetail" component={QuestionDetail}></Route>
                 {/* 我的足迹 */}
                 <Route path="/footprint" component={Footprint}></Route>
                 <Route path="/video_detail" component={VideoDetailContainer}></Route>

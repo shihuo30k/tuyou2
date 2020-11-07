@@ -1,10 +1,14 @@
 import React,{useState} from 'react'
 import { NavBar, Icon ,InputItem} from 'antd-mobile';
 import {
+  useHistory
+} from 'react-router-dom';
+import {
   MySubscribeListWrap,
   BorderH4
 } from './styledMySubscribe'
 export default function MySubscribeList() {
+  const history = useHistory()
   const [state, setState] = useState( {
     value1: '',
     value2: '',
@@ -44,7 +48,7 @@ export default function MySubscribeList() {
       <NavBar
         mode="light"
         icon={<Icon type="left" />}
-        onLeftClick={() => console.log('onLeftClick')}
+        onLeftClick={() => history.goBack()}
         rightContent={[
           
           <Icon key="1" type="ellipsis" />,

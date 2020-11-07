@@ -1,10 +1,14 @@
 import React from 'react'
 import {
+  useHistory
+} from 'react-router-dom'
+import {
   AllSelectedTagWrap,
   BorderLi
 } from './styledAllSelected'
 export default function List(props) {
   // console.log(Object.keys(props.arr));
+  const history = useHistory()
   return (
     <AllSelectedTagWrap>
       {
@@ -23,6 +27,7 @@ export default function List(props) {
                   color="rgba(31,32,35,.2)"
                   radius=".02"
                   key={i}
+                  onClick={() => {history.push('/visa',{title:v})}}
                 >
                  {v}
                 </BorderLi>
