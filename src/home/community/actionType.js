@@ -9,6 +9,8 @@ const SETAUTHOR = 'home/community/author'
 const SETQALS = 'home/community/qals'
 //结伴
 const SETPRTNERSHIP = 'partnertravel/PartnerTravel'
+//最新精华
+const SETNEWSELECTED = "newselected/NewSelected"
 export {
   SETTOPIC,
   SETTODAYTRAVEL,
@@ -16,5 +18,6 @@ export {
   SETTRAVEL,
   SETAUTHOR,
   SETQALS,
-  SETPRTNERSHIP
+  SETPRTNERSHIP,
+  SETNEWSELECTED
 }

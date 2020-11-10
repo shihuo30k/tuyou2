@@ -1,16 +1,18 @@
 import React from 'react'
-
+import {
+  useHistory
+} from 'react-router-dom'
 import {
   TravelNotesWrap,
   BorderLi,
-  Ellipsis
+  Ellipsis,
 } from './styledCommunity'
 import Author from '@c/author/Author'
 import {svg1,svg2} from './svg'
 export default function TravelNotes(props) {
-
+  const history = useHistory()
   const state = props.TravelNotesList
-  // console.log(state.slice(0,2));
+  // console.log(state);
   const list1 = state && state.slice(0,2)
   const list2 = state && state.slice(2,5*props.pageSize)
   let list3 = list2.slice(0,20)
@@ -28,10 +30,12 @@ export default function TravelNotes(props) {
 
           {
             list1 && list1.map(v=>{
+              // console.log(v.data.id);
               return(
                 <BorderLi
                 key={v.data.id}
                 width='0 0 1px 0'
+                onClick={() => {history.push('/jxtravalnote',{id:v.data.id})}}
               >
                 <div className='aa'>
                   <p>
@@ -89,6 +93,7 @@ export default function TravelNotes(props) {
           <BorderLi
           key={v.data.id}
           width='0 0 1px 0'
+          onClick={() => {history.push('/jxtravalnote',{id:v.data.id})}}
         >
           <div className='aa'>
             <p>

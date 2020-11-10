@@ -5,6 +5,7 @@ module.exports = function() {
         author:require('./community/community-author.json'),
         qals:require('./community/community-qa.json'),
         partner: require('./community/community-partnership.json'),
+        newselected: require('./community/community-newselected.json'),
         visa: require('./community/community-visa.json'),
         inhot:require('./destination/inHot-data.json'),
         subject:require('./destination/subject-data.json'),

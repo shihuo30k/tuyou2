@@ -56,8 +56,8 @@ const TopicWrap = styled.div  `
   ul {
     display:flex;
     background-color:#f2f2f2;
-    width:19rem;
-    /* width:max-content; */
+    /* width:19rem; */
+    width:max-content;
     li {
       width:3.15rem;
       height:.92rem;
@@ -323,8 +323,8 @@ const PartnerTravelWrap = styled.div `
     padding-left:.16rem;
     ul{
       display:flex;
-      /* width:max-content; */
-      width:11rem;
+      width:max-content;
+      /* width:11rem; */
       li{
         width:1.6rem;
         height:1.94rem;
@@ -425,8 +425,8 @@ const AuthorWrap = styled.div  `
   ul{ 
     background-color: #f2f2f2;
     display:flex;
-    /* width:max-content; */
-    width:6rem;
+    width:max-content;
+    /* width:6rem; */
     li{
       width:1.6rem;
       height:2.04rem;

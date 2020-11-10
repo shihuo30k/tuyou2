@@ -78,7 +78,7 @@ export default function SelectedQA(props) {
               }}
             >
              <SelectedQAList
-              list = {qaList}
+              list = {qaList&&qaList.slice(41,81)}
              ></SelectedQAList>
             </TabBar.Item>
              <TabBar.Item
@@ -103,7 +103,7 @@ export default function SelectedQA(props) {
               }}
             >
              <SelectedQAList
-              list = {qaList}
+              list = {qaList&&qaList.slice(81,121)}
              ></SelectedQAList>
             </TabBar.Item>
   

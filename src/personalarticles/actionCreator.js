@@ -14,7 +14,7 @@ const loadArticleListAsync = () => {
       let result = await get({
           url:'/api/article'
       })
-      console.log(result.data)
+      // console.log(result.data)
       dispatch(loadArticleListSync(result.data))
   }
 }

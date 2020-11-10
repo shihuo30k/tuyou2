@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {useHistory} from 'react-router-dom'
 import {
   QAContent,
   Ellipsis
@@ -8,7 +9,7 @@ import eyesvg from '@a/images/eye.svg'
 import thumbsvg from '@a/images/thumb.svg'
 
 export default function SelectedQAList(props) {
-
+  const history = useHistory()
   const [state, setState] = useState( {
     refreshing: false,
     down: true,
@@ -16,10 +17,13 @@ export default function SelectedQAList(props) {
     pageSize:1,
   })
   // console.log(props.list.slice(0,5*state.pageSize))
-  let list=props.list.slice(2,8*state.pageSize)
+  let list=props.list.slice(2,9*state.pageSize)
   let list1 = list.slice(2,40)
   // console.log(state.pageSize);
 
+  const handleClick = (v)=>{
+    history.push("/qadetail",{v,list:props.list})
+  }
   return (
     <div>
       <PullToRefresh
@@ -40,19 +44,20 @@ export default function SelectedQAList(props) {
           >
     <QAContent>
     {
-    list1 &&  list1.map(v=>{
+    list1 &&  list1.map((v,i)=>{
       return(
         <li
-        key={v.question_views}
+        key={i}
+        onClick={()=>handleClick(v)}
         >
           <h2>{v.question_title}</h2>
          { v.answer_image && <h3>
-            <img src= "http://yl.charmiot.com/travel_qygbz1/images/demo/u386.jpg"alt=""/>
+            <img src= {v.answer_image} alt=""/>
           </h3>}
-          <Ellipsis lc="2">{v.answer_content}
-          </Ellipsis>
+          {<Ellipsis lc="2">{v.answer_content ? v.answer_content : v.question_title}
+          </Ellipsis>}
           <h5>
-            <div className='name'>{v.answer_username}
+            <div className='name'>{v.answer_username?v.answer_username:(v.question_username + " | "+ v.question_date )}
               {
                 v.answer_source_type==="1" ? <p>待回答</p> : ''
                 
@@ -71,7 +76,7 @@ export default function SelectedQAList(props) {
                   <img src={thumbsvg} alt=""/>
                 </p>
                 <span>
-                 {v.answer_usenum}
+                 {v.question_views ?v.question_views:v.answer_usenum}
                 </span>
               </div>
             </div>

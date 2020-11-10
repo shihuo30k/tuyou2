@@ -9,8 +9,16 @@ import {
   SETTRAVEL,
   SETAUTHOR,
   SETQALS,
-  SETPRTNERSHIP
+  SETPRTNERSHIP,
+  SETNEWSELECTED
 } from './actionType'
+//最新精华
+const setNewSelected = newSelectedList =>{
+  return{
+    type:SETNEWSELECTED,
+    newSelectedList
+  }
+}
 //结伴
 const setPsl = partnerShipList =>{
   return{
@@ -143,5 +151,6 @@ export default{
   setTravelAsync,
   setauthorAsync,
   setQaLsAsync,
-  setPaetnerAsync
+  setPaetnerAsync,
+  setNewSelected
 }
