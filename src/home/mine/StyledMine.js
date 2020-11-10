@@ -141,6 +141,402 @@ const Container = styled.div `
 
 `
 
+
+const Footprints = styled.div `
+    .di{
+        width:100%;
+        height:2.41rem;
+        background-color:rgb(216, 216, 216);
+    }
+
+    .ditu{
+        padding-top:.44rem;
+        width:100%;
+        height:1.88rem;
+        background-color:rgb(216, 216, 216);
+        img{
+            height:1.88rem;
+        }
+    }
+
+    .first{
+        width:100%;
+        height:2.2rem;
+        background-color:#fff;
+        border-bottom:1px solid #eee;
+        h1{
+            color:rgb(86, 86, 86);
+            width:100%;
+            height:.34rem;
+            line-height:.49rem;
+            margin-left:.15rem;
+        }
+                
+        .first1{
+            height:.2rem;
+            img{
+                height:1.14rem;
+                width:1.7rem;
+            }
+            .first3{
+                height:100%;
+                span{
+                    display:block;
+                    margin:0 .09rem;
+                    height:.35rem;
+                    border:1px solid #ccc;
+                    line-height:.35rem;
+                    color:rgb(182, 192, 216)
+                }
+            }
+        }
+    }
+
+    .am-grid .am-flexbox .am-flexbox-item .am-grid-item-content{
+        height:1.6rem;
+    }
+    `
+
+
+const Logins = styled.div`
+      width:100%;
+      height:4rem;
+      background-color:#fff;
+   .guanbi{
+       position:absolute;
+       right:.4rem;
+       top:.4rem;
+   }
+   .touxiang{
+       text-align:center;
+       padding-top:.7rem;
+       img{
+        width:.7rem;
+        height:.7rem;
+       }
+   }
+   form{
+       margin-left:15%;
+       margin-top:.1rem;
+       display:flex;
+       flex-direction:column;
+       justify-content: center;
+       align-items: center;
+       text-align:center;
+       width:70%;
+       height:2.3rem;
+       label{
+           width:100%;
+           height:.5rem;
+           text-aligin:center;
+           display:flex;
+           border-bottom:1px solid #ccc;
+           
+           img{
+               padding-left:.2rem;
+           }
+           input{
+               flex:1;
+               margin-left:.2rem;
+               border:none;
+               font-size:.12rem;
+           }
+       }
+       .password{
+           text-align:right;
+           width:100%;
+           height:1rem;
+           padding-top:.15rem;
+           padding-bottom:.15rem;
+           font-size:.1rem;
+           background-color:#fff;
+           span{
+               color:rgb(40, 195, 132);
+           }
+       }
+       button{
+           width:100%;
+           height:2rem;
+           border:none;
+           color:#fff;
+           border-radius:.2rem;
+           background-color:rgb(40, 195, 132);
+       }
+       .new{
+        text-align:center;
+        width:100%;
+        height:1rem;
+        padding-top:.15rem;
+        font-size:.1rem;
+        background-color:#fff;
+        span{
+            color:rgb(40, 195, 132);
+        }
+       }
+
+      
+   }
+   .or{
+       width:80%;
+       height:2rem;
+       margin-left:10%;
+       text-align:center;
+       padding-top:.15rem;
+       .or1{
+           span{
+               margin-left:.1rem;
+               margin-right:.1rem;
+               color:#999999;
+               font-size:.1rem;
+           }
+       }
+       .way{
+           background-color:#fff;
+           div{
+               button{
+                   width:90%;
+                   height:.4rem;
+                   margin-top:.15rem;
+                   border:1px solid #d7dde4;
+                   border-radius:.2rem;
+                   text-align:center;
+                   background-color:#fff;
+                   position:relative;
+                   img{
+                       position:absolute;
+                       left:.15rem;
+                   }
+               }
+           }
+       }
+   }
+
+
+
+`
+
+const Loginss = styled.div`
+     height:100%;
+`
+
+const NavBarRecommends = styled.div`
+     .am-navbar-title{
+         color:rgb(121, 118, 113);
+     }
+    .am-navbar-right{
+        img{
+            display:none;
+        }
+    }
+`
+
+
+const Reset = styled.div`
+width:100%;
+height:100%;
+background-color:#fff;
+
+form{
+padding-top:1rem;
+ margin-left:15%;
+ display:flex;
+ flex-direction:column;
+ justify-content: center;
+ align-items: center;
+ text-align:center;
+ width:70%;
+ height:2.8rem;
+ label{
+     width:100%;
+     height:.5rem;
+     text-aligin:center;
+     display:flex;
+     border-bottom:1px solid #ccc;
+     
+     img{
+         padding-left:.2rem;
+         width:.2rem;
+     }
+     input{
+         flex:1;
+         padding-left:.1rem;
+        //  margin-left:.2rem;
+         border:none;
+         font-size:.12rem;
+     }
+     p{
+         display:block;
+         width:4rem;
+         height:.5rem;
+         font-size:.1rem;
+         line-height:.5rem;
+         color:#a9b3bd;
+     }
+ }
+ .password{
+     text-align:right;
+     width:100%;
+     height:1rem;
+     padding-top:.15rem;
+     padding-bottom:.15rem;
+     font-size:.1rem;
+     background-color:#fff;
+     span{
+         color:rgb(40, 195, 132);
+     }
+ }
+ button{
+     width:100%;
+     height:2rem;
+     border:none;
+     color:#fff;
+     border-radius:.2rem;
+     background-color:rgb(40, 195, 132);
+ }
+ .new{
+  text-align:center;
+  width:100%;
+  height:1rem;
+  padding-top:.15rem;
+  font-size:.1rem;
+  background-color:#fff;
+  span{
+      color:rgb(40, 195, 132);
+  }
+ }
+
+
+}
+.am-navbar{
+    width:100%;
+    background-color:#f2f2f2;
+    border:1px solid #eee;
+}
+.am-navbar-title{
+    color:#999999;
+    font-size:.12rem;
+}
+.am-navbar-right{
+    img{
+        display:none;
+    }
+}
+`
+
+const CreateUsers = styled.div`
+width:100%;
+height:100%;
+background-color:#fff;
+
+.touxiang{
+    text-align:center;
+    padding-top:.7rem;
+    img{
+     width:.7rem;
+     height:.7rem;
+    }
+}
+form{
+padding-top:.4rem;
+ margin-left:15%;
+ display:flex;
+ flex-direction:column;
+ justify-content: center;
+ align-items: center;
+ text-align:center;
+ width:70%;
+ height:2.8rem;
+ label{
+     width:100%;
+     height:.5rem;
+     text-aligin:center;
+     display:flex;
+     border-bottom:1px solid #ccc;
+     
+     img{
+         padding-left:.2rem;
+         width:.2rem;
+     }
+     input{
+         flex:1;
+         padding-left:.1rem;
+        //  margin-left:.2rem;
+         border:none;
+         font-size:.12rem;
+     }
+     p{
+         display:block;
+         width:4rem;
+         height:.5rem;
+         font-size:.1rem;
+         line-height:.5rem;
+         color:#a9b3bd;
+     }
+ }
+ .password{
+     text-align:left;
+     width:100%;
+     height:1rem;
+     padding-top:.15rem;
+     padding-bottom:.15rem;
+     font-size:.1rem;
+     background-color:#fff;
+     padding-left:.07rem;
+     span{
+         color:rgb(40, 195, 132);
+     }
+     .am-list-content{
+         font-size:.12rem;
+     }
+     .am-checkbox{
+        .am-checkbox-inner{
+            
+            width:.2rem;
+            heigth:.6rem;
+         }
+         
+     }
+ }
+ button{
+     width:100%;
+     height:2rem;
+     border:none;
+     color:#fff;
+     border-radius:.2rem;
+     background-color:rgb(40, 195, 132);
+ }
+ .new{
+  text-align:center;
+  width:100%;
+  height:1rem;
+  padding-top:.15rem;
+  font-size:.1rem;
+  background-color:#fff;
+  span{
+      color:rgb(40, 195, 132);
+  }
+ }
+
+
+}
+
+.am-navbar-title{
+    color:#999999;
+    font-size:.12rem;
+}
+.am-navbar-right{
+    img{
+        display:none;
+    }
+}
+`
+
 export {
-    Container
+    Container,
+    Footprints,
+    NavBarRecommends,
+    Logins,
+    Loginss,
+    Reset,
+    CreateUsers,
 }

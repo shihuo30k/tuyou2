@@ -3,10 +3,11 @@ import { connect } from 'react-redux'
 import {PullToRefresh} from 'antd-mobile'
 
 import { 
-    loadBannerDataAsync, 
-    loadTravalDataAsync, 
+    loadBannerDataAsync,
+    loadTravalDataAsync,
     loadQuestionDataAsync,
-    changeTravalListState 
+    changeTravalListState,
+    loadSpecialDataAsync
 } from '../actionCreator'
 import RecommendUi from '../ui/RecommendUi'
 
@@ -18,14 +19,15 @@ import nav5 from '@a/images/nav5.svg'
 
 @connect(
     (state) => {
-        // console.log(state.getIn(['recommend','bannerList']))
+        // console.log(state.getIn(['recommend', "specialData"]))
         // console.log(state.getIn(['recommend','travalListState','travalPage']))
         return {
-            bannerList: state.getIn(['recommend','bannerList']),
-            travalList: state.getIn(['recommend','travalList']),
+            bannerList: state.getIn(['recommend', 'bannerList']),
+            travalList: state.getIn(['recommend', 'travalList']),
             questionList: state.getIn(['recommend','questionList']),
-            refreshing:state.getIn(['recommend','travalListState','refreshing']),
-            travalPage:state.getIn(['recommend','travalListState','travalPage'])
+            specialData:state.getIn(['recommend', "specialData"]),
+            refreshing:state.getIn(['recommend', 'travalListState', 'refreshing']),
+            travalPage:state.getIn(['recommend', 'travalListState', 'travalPage']),
         }
     },
     (dispatch) => ({
@@ -40,6 +42,9 @@ import nav5 from '@a/images/nav5.svg'
         },
         changeTraval(action) {
             dispatch(changeTravalListState(action))
+        },
+        loadSpecialData() {
+            dispatch(loadSpecialDataAsync())
         }
     })
 )
@@ -68,7 +73,7 @@ class Recommend extends Component {
                 id:4,
                 title:'结伴',
                 svg:nav4,
-                url:'/partner'
+                url:'/pt'
             },
             {
                 id:5,
@@ -82,6 +87,7 @@ class Recommend extends Component {
         this.props.loadBannerData()
         this.props.loadTravalData()
         this.props.loadQuestionData()
+        this.props.loadSpecialData()
     }
     componentDidUpdate() {
         // console.log(this.props.bannerList)
@@ -110,6 +116,7 @@ class Recommend extends Component {
                         navList = {this.state.navList}
                         travalList = {this.props.travalList}
                         questionList = {this.props.questionList}
+                        specialData = {this.props.specialData}
                     ></RecommendUi>
                 </PullToRefresh>
             </div>

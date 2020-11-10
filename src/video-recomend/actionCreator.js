@@ -1,6 +1,24 @@
 
 import {get} from '@u/http'
-import {LOADVIDEOBANNERS} from './actionTypes'
+import {LOADVIDEOBANNERS, LOADVIDEODATA} from './actionTypes'
+
+
+const loadVideoDataSync = (videoList) => {
+    return {
+        type: LOADVIDEODATA,
+        videoList
+    }
+}
+
+const loadVideoDataAsync = () => {
+    return async (dispatch) => {
+        let result = await get({
+            url:'/api/videolist'
+        })
+        // console.log(result.data.list)
+        dispatch(loadVideoDataSync(result.data.list))
+    }
+}
 
 
 const loadVideoBannersSync = (videoBanners) => {
@@ -15,11 +33,13 @@ const loadVideoBannersAsync = () => {
         let result = await get({
             url:'/api/videobanner'
         })
-        console.log(result)
+        dispatch(loadVideoBannersSync(result.data.list))
     }
 }
 
 export {
     loadVideoBannersAsync,
-    loadVideoBannersSync
+    loadVideoBannersSync,
+    loadVideoDataAsync,
+    loadVideoDataSync
 }

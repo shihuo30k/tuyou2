@@ -9,14 +9,14 @@ import Advertising from './Advertising'
 import TravalNoteList from './TravalNoteList'
 
 const RecommendUi = (props) => {
-    const {bannerList,navList,travalList,questionList} = props
+    const {bannerList,navList,travalList,questionList,specialData} = props
 
     return (
         <>
             <SwiperRecommend SwiperBanner = {bannerList}></SwiperRecommend>
             <Search></Search>
             <Nav navList = {navList}></Nav>
-            <Special travalList = {travalList}></Special>
+            <Special specialData = {specialData}></Special>
             <Tabs tabsList = {travalList}></Tabs>
             <Topical topicalList={questionList}></Topical>
             <Advertising></Advertising>

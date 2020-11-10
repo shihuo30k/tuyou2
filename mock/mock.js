@@ -5,6 +5,7 @@ module.exports = function() {
         author:require('./community/community-author.json'),
         qals:require('./community/community-qa.json'),
         partner: require('./community/community-partnership.json'),
+        visa: require('./community/community-visa.json'),
         inhot:require('./destination/inHot-data.json'),
         subject:require('./destination/subject-data.json'),
         countries:require('./destination/all-countries.json'),
@@ -18,6 +19,7 @@ module.exports = function() {
         videobanner:require('./recommend/video-banner.json'),
         videolist:require('./recommend/video-data.json'),
         recomindex:require('./recomindex/recomindex.json'),
-        todaytopic:require('./recomindex/todaytopic.json')
+        todaytopic:require('./recomindex/todaytopic.json'),
+        zhuanti:require('./recommend/zhuanti_data.json')
     }
 }

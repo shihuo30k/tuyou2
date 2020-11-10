@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+import React, { useCallback } from 'react';
+
+
+import { useHistory,withRouter } from 'react-router-dom'
 
 import touxiang from '@a/images/touxiang.png'
 
@@ -6,8 +9,17 @@ import {
     Container
 } from '../StyledMine'
 
-class HomePage extends Component {
-    render() {
+
+
+const HomePage = () =>  {
+    let history = useHistory()
+
+    const handleClick=useCallback(() => {
+        return () => {
+            history.push('/Login')
+            
+        }
+    },[history])
         return (
             <Container>
                 <div>
@@ -15,9 +27,11 @@ class HomePage extends Component {
                        <li>
                            <img src={touxiang} alt=""/>
                        </li>
-                       <li>
-                           浪迹天涯
-                           <span>朝九晚五</span>
+                       <li
+                          onClick={handleClick()}
+                       >
+                           点击登录
+                           {/* <span>朝九晚五</span> */}
                        </li>
                        <li>个人主页 {">"}</li>
                    </ul>
@@ -25,6 +39,6 @@ class HomePage extends Component {
             </Container>
         );
     }
-}
 
-export default HomePage;
+
+export default withRouter(HomePage);

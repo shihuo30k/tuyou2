@@ -1,6 +1,28 @@
 import { List } from 'immutable'
 import { get } from '@u/http.js'
-import {LOADBANNERDATA, LOADTRAVALDATA, LOADQUESTIONDATA, CHANGETRAVALLISTSTATE } from './actionTypes'
+import {
+    LOADBANNERDATA, 
+    LOADTRAVALDATA, 
+    LOADQUESTIONDATA, 
+    CHANGETRAVALLISTSTATE,
+    LOADSPECIALDATA 
+} from './actionTypes'
+
+const loadSpecialDatasync = specialData => {
+    return {
+        type: LOADSPECIALDATA,
+        specialData
+    }
+}
+
+const loadSpecialDataAsync = () => {
+    return async dispatch => {
+        let result = await get({
+            url:'/api/zhuanti'
+        })
+        dispatch(loadSpecialDatasync(result.data.list))
+    }
+}
 
 const changeTravalListState = travalListState => {
     return {
@@ -66,5 +88,7 @@ export {
     loadTravalDataAsync,
     loadQuestionDataSync,
     loadQuestionDataAsync,
-    changeTravalListState
+    changeTravalListState,
+    loadSpecialDataAsync,
+    loadSpecialDatasync
 }

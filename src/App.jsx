@@ -13,6 +13,20 @@ import Section from './section/container/Section'
 import VideoContainer from './video-recomend/container/VideoContainer'
 import  ArticleDetials from './article-detials/ArticleDetails'
 import Recomindex from './recommendnotes/container/Recomindex'
+import Todaytopic from './todaytopic/container/Todaytopic'
+import Footprint from '@h/mine/ui/FootprintUi'
+import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
+import {Visa} from './visa/index'
+
+import {CreateSection} from './section-create'
+import {SpecialListContainer} from './speciaList'
+import {SpecialDetailContainer} from './special-detail'
+import {DateSelectContainer} from './date_select'
+
+import LoginUi from '@h/mine/ui/LoginUi'
+import ResetPassword from '@h/mine/ui/ResetPassword'
+import CreateUser from '@h/mine/ui/CreateUser'
+
 
 class App extends Component {
     state = {
@@ -41,6 +55,22 @@ class App extends Component {
                 <Route path="/articleDetials" component={ArticleDetials}></Route>
                 <Route path="/recomindex"  component={Recomindex}></Route>
                 <Route component={ErrPage}></Route>
+                <Route path="/todaytopic" component={Todaytopic}></Route>
+                {/* 我的足迹 */}
+                <Route path="/footprint" component={Footprint}></Route>
+                <Route path="/video_detail" component={VideoDetailContainer}></Route>
+                <Route path="/visa" component={Visa}></Route>
+                <Route path="/tobe_author" component={CreateSection}></Route>
+                {/* 首页专题列表 */}
+                <Route path="/special_list" component={SpecialListContainer}></Route>
+                {/* 登录 */}
+                <Route path="/login" component={LoginUi}></Route>
+                {/* 重置密码 */}
+                <Route path="/ResetPassword" component={ResetPassword}></Route>
+                {/* 创建用户 */}
+                <Route path="/CreateUser" component={CreateUser}></Route>
+                <Route path="/special_detail" component={SpecialDetailContainer}></Route>
+                <Route path='/date_select' component={DateSelectContainer}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );

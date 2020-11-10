@@ -3,6 +3,7 @@ import border from '@a/styled/border'
 const PartnerWrap = styled.div ` 
   width:100%;
   height:100%;
+  overflow:hidden;
 `
 
 const SearchWrap = styled.div `
@@ -40,8 +41,50 @@ const SelectedWrap = border(styled.div `
     justify-content:center;
     align-items:center;
     background-color:#fff;
+    span{
+      font-size:.14rem;
+      color:#797979;
+    }
+    span:nth-child(2){
+      color:#000;
+      font-weight:700;
+    }
   }
-
+  .pub{
+      width:.6rem;
+      height:.6rem;
+      position:fixed;
+      bottom:.2rem;
+      left:calc(50% - .3rem);
+  }
+  .pubtime{
+    width:100%;
+    position: absolute;
+    right:0;
+    top:1rem;
+    z-index:999; 
+    ul{
+      width:100%;
+      background-color: #fff;
+      .active{
+        color:#FF168F;
+      }
+      li{
+        width:100%;
+        height:.6rem;
+        line-height:.6rem;
+        text-align:center;
+        font-size:.2rem;
+        color:#000;
+        z-index:9999;
+        &:hover{
+        color:#FF168F;
+      }
+      }
+    
+      
+    }
+  }
 `)
 
 const BorderLi = border(styled.li ``)
@@ -128,11 +171,81 @@ const PartnerListWrap = styled.div `
     }
   }
 `
+const AdressWrap = styled.div ` 
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:99;
+  background-color:#fff;
+  .am-search {
+    height:.5rem;
+    background-color: #fff;
+    }
+  .am-search-input{
+      height:.3rem;
+      border-radius:.15rem;
+      background-color:#f2f2f2;
+    }
+    .am-search-cancel{
+      color:#000;
+      font-size:.14rem;
+    }
+    .content{
+      width:100%;
+      .hot{
+        font-size: .14rem;
+        line-height: .3rem;
+        opacity: .4;
+        margin-bottom: .2rem;
+        padding-left:.15rem;
+      }
+      ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+        li{
+          width: 25%;
+          margin-bottom: .3rem;
+          display:flex;
+          flex-direction:column;
+          /* justify-content:center; */
+          align-items:center;
+          p{
+            width:.64rem;
+            height:.64rem;
+            position:relative;
+            img{
+              width:100%;
+              height:100%;
+              border-radius:50%;
+            }
+            b{
+              position:absolute;
+              top:10%;
+              left:50%;
+              transform:translate(-50%,50%);
+              font-size:.2rem;
+              color:#fff;
+            }
+          }
+         
+          span{
+            font-size: .14rem;
+            padding-top: .05rem;
 
+          }
+        }
+      }
+    }
+`
 export {
   PartnerWrap,
   SearchWrap,
   SelectedWrap,
   PartnerListWrap,
-  BorderLi
+  BorderLi,
+  AdressWrap
 }
