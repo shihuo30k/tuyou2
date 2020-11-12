@@ -10,7 +10,7 @@
     "/api/jnlist":"/jnlist",
     "/api/question":"/question",
     "/api/countries":"/countries",
-    "/api/section":"/section",
+    "/api/section_artical":"/section_artical",
     "/api/qals":"/qals",
     "/api/partner":"/partner",
     "/api/article":"/article",
@@ -19,5 +19,7 @@
     "/api/recomindex":"/recomindex",
     "/api/zhuanti":"/zhuanti",
     "/api/newselected":"/newselected",
-    "/api/visa":"/visa"
+    "/api/visa":"/visa",
+    "/api/section":"/section",
+    "/api/artical_detail":"/artical_detail"
 }

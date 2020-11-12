@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {useHistory} from 'react-router-dom'
 import {get} from '@u/http'
-import {SrWrap} from './StyledSection'
+import {SrWrap, SrWrapElliP} from './StyledSection'
 
 export default () => {
     const [list, setList] = useState([])
@@ -35,13 +35,12 @@ export default () => {
         loadSectionData()
     },[])
     // console.log(list.slice(0, page * 4))
-    const lis = list.slice(8, page * 4)
     return (
         <SrWrap>
             <h1>推荐专栏</h1>
             <ul>
                 {
-                    lis.map((value, index) => {
+                    list.map((value, index) => {
                         // console.log(value)
                         return (
                             <li
@@ -50,10 +49,10 @@ export default () => {
                             style={{backgroundColor: colorList[index % 4].tColor}}
                             >
                                 <div className="avatar">
-                                    <img src={`https://pic.qyer.com/public/zhuanlan/zhuanlan/2018/07/26/15325750126940?imageMogr2/auto-orient/thumbnail/!200x200r/gravity/Center/crop/200x200/format/jpg|imageslim`} alt="" onLoad={() => {dispatchEvent(new Event('resize'))}}/>
+                                    <img src={value.user_logo} alt="" onLoad={() => {dispatchEvent(new Event('resize'))}}/>
                                 </div>
-                                <h3>{value.zhuanlan.name}</h3>
-                                <p>{value.title}</p>
+                                <h3>{value.sec_name}</h3>
+                                <SrWrapElliP lc={2}>{value.title}</SrWrapElliP>
                                 <div 
                                 style={{backgroundColor: colorList[index % 4].bColor}}
                                 className='bottom'>进入专栏</div>

@@ -28,6 +28,7 @@ import {CreateSection} from './section-create'
 import {SpecialListContainer} from './speciaList'
 import {SpecialDetailContainer} from './special-detail'
 import {DateSelectContainer} from './date_select'
+import SectionArticleDetail from './section/ArticalDetail'
 
 import LoginUi from '@h/mine/ui/LoginUi'
 import ResetPassword from '@h/mine/ui/ResetPassword'
@@ -80,6 +81,7 @@ class App extends Component {
                 <Route path="/CreateUser" component={CreateUser}></Route>
                 <Route path="/special_detail" component={SpecialDetailContainer}></Route>
                 <Route path='/date_select' component={DateSelectContainer}></Route>
+                <Route path="/section_artical_detail" component={SectionArticleDetail}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
