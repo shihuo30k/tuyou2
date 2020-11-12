@@ -5,7 +5,7 @@ const Container = styled.div `
         height: .44rem;
         line-height: .44rem;
         text-align: center;
-        font-size: .16rem;
+        font-size: .12rem;
         color: #fff;
         background-color: #2ac383;
     }
@@ -21,19 +21,21 @@ const Container = styled.div `
         line-height:1em;
         text-align:center;
         width:100%;
+        font-size:.12rem;
         height:.6rem;
         position:relative;
         svg{
             position:absolute;
-            width:.35rem;
-            height:.35rem;
+            width:.25rem;
+            height:.25rem;
             fill:#13be79;
             padding-top:.25rem;
-            top:.1rem;
+            top:.19rem;
             padding:0;
             margin:0;
         }
         span{
+            font-size:.12rem;
             padding-left:.4rem;
         }
     }
@@ -56,7 +58,7 @@ const Container = styled.div `
             color:#333333;
             text-align:left;
             margin-top:.3rem;
-            font-size:.18rem;
+            font-size:.14rem;
             font-weight:600;
             span{
                 display:block;
@@ -67,7 +69,7 @@ const Container = styled.div `
         li:nth-child(3){
             text-align:center;
             margin-top:.3rem;
-            font-size:.14rem;
+            font-size:.12rem;
             color:#333333;
         }
     }
@@ -81,14 +83,15 @@ const Container = styled.div `
             height:.5rem;
             svg{
                 margin-top:.05rem;
-                width:.3rem;
-                height:.3rem;
+                width:.2rem;
+                height:.2rem;
                 fill:#13be79;
                 margin-bottom:.05rem;
             }
         }
         .Coll2{
             width:100%;
+            font-size:.12rem;
             color:#434343;
         }
     }
@@ -101,13 +104,13 @@ const Container = styled.div `
             display:flex;
             width:100%;
             border:none;
-            height:.6rem;
+            height:.5rem;
             justify-content: center;
             align-items: center;
             padding-left:.2rem;
             svg{
-                width:.3rem;
-                height:.3rem;
+                width:.2rem;
+                height:.2rem;
                 fill:#13be79;
             }
             .List1-1,.List1-2{
@@ -123,13 +126,13 @@ const Container = styled.div `
         .List3,.List4,.List5,.List6,.List7,.List8{
             display:flex;
             width:100%;
-            height:.6rem;
+            height:.5rem;
             justify-content: center;
             align-items: center;
             padding-left:.2rem;
             svg{
-                width:.3rem;
-                height:.3rem;
+                width:.2rem;
+                height:.2rem;
                 fill:#13be79;
             }
             .List1-3,.List1-4,.List1-5,.List1-6,.List1-7,.List1-8{
@@ -137,6 +140,9 @@ const Container = styled.div `
                 height:100%;
             }
         }
+    }
+    .am-list-line .am-list-content{
+        font-size:.12rem;
     }
 
 `
@@ -240,6 +246,22 @@ const Logins = styled.div`
                margin-left:.2rem;
                border:none;
                font-size:.12rem;
+           }
+           .dui{
+               display:none;
+               text-align:center;
+               line-heihgt:.2rem;
+               padding-top:.14rem;
+               width:.2rem;
+               color:green;
+           }
+           .cuo{
+            display:none;
+            text-align:center;
+            line-heihgt:.2rem;
+            padding-top:.14rem;
+            color:red;
+            width:.2rem;
            }
        }
        .password{
@@ -364,6 +386,22 @@ padding-top:1rem;
          border:none;
          font-size:.12rem;
      }
+     .dui{
+        display:none;
+        text-align:center;
+        line-heihgt:.2rem;
+        padding-top:.14rem;
+        width:.2rem;
+        color:green;
+    }
+    .cuo{
+     display:none;
+     text-align:center;
+     line-heihgt:.2rem;
+     padding-top:.14rem;
+     color:red;
+     width:.2rem;
+    }
      p{
          display:block;
          width:4rem;
@@ -445,7 +483,7 @@ padding-top:.4rem;
  align-items: center;
  text-align:center;
  width:70%;
- height:2.8rem;
+ height:3rem;
  label{
      width:100%;
      height:.5rem;
@@ -464,6 +502,22 @@ padding-top:.4rem;
          border:none;
          font-size:.12rem;
      }
+     .dui{
+        display:none;
+        text-align:center;
+        line-heihgt:.2rem;
+        padding-top:.14rem;
+        width:.2rem;
+        color:green;
+    }
+    .cuo{
+     display:none;
+     text-align:center;
+     line-heihgt:.2rem;
+     padding-top:.14rem;
+     color:red;
+     width:.2rem;
+    }
      p{
          display:block;
          width:4rem;
@@ -482,6 +536,14 @@ padding-top:.4rem;
      font-size:.1rem;
      background-color:#fff;
      padding-left:.07rem;
+     .am-list-body{
+        &::before{
+            height: 0
+        }
+        &::after{
+            height: 0
+        }
+    }
      span{
          color:rgb(40, 195, 132);
      }
@@ -520,6 +582,19 @@ padding-top:.4rem;
 
 }
 
+.am-flexbox-item{
+    height:.4rem;
+    text-align:center;
+    border:none;
+}
+.am-checkbox-wrapper{
+    font-size:.1rem;
+    text-align:left;
+    line-height:.25rem;
+    a{
+        color:#28c384;
+    }
+}
 .am-navbar-title{
     color:#999999;
     font-size:.12rem;

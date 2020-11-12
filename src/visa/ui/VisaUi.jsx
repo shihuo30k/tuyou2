@@ -6,7 +6,6 @@ import ShowList from './ShowList'
 
 
 const VisaUi = ()=> {
-  
     return (
       <VisaContainer>
         <SearchX></SearchX>
