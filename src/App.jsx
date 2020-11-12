@@ -16,11 +16,19 @@ import Recomindex from './recommendnotes/container/Recomindex'
 import Todaytopic from './todaytopic/container/Todaytopic'
 import Footprint from '@h/mine/ui/FootprintUi'
 import VideoDetailContainer from './video-detail/container/VideoDetailContainer'
+
+import NewSelected from './newselected/container/NewSelected'
+import AllSelected from './allselected/container/AllSelected';
+import MySubscribe from './mysubscribe/container/MySubscribe'
+import QuestionDetail from './questiondetial/container/QuestionDetail'
+
 import {Visa} from './visa/index'
 
 import {CreateSection} from './section-create'
 import {SpecialListContainer} from './speciaList'
 import {SpecialDetailContainer} from './special-detail'
+import {DateSelectContainer} from './date_select'
+import SectionArticleDetail from './section/ArticalDetail'
 
 import LoginUi from '@h/mine/ui/LoginUi'
 import ResetPassword from '@h/mine/ui/ResetPassword'
@@ -54,6 +62,10 @@ class App extends Component {
                 <Route path="/articleDetials" component={ArticleDetials}></Route>
                 <Route path="/recomindex"  component={Recomindex}></Route>
                 <Route path="/todaytopic" component={Todaytopic}></Route>
+                <Route path="/newselected" component={NewSelected}></Route>
+                <Route path="/allselected" component={AllSelected}></Route>
+                <Route path="/mysubscibe" component={MySubscribe}></Route>
+                <Route path="/qadetail" component={QuestionDetail}></Route>
                 {/* 我的足迹 */}
                 <Route path="/footprint" component={Footprint}></Route>
                 <Route path="/video_detail" component={VideoDetailContainer}></Route>
@@ -68,6 +80,8 @@ class App extends Component {
                 {/* 创建用户 */}
                 <Route path="/CreateUser" component={CreateUser}></Route>
                 <Route path="/special_detail" component={SpecialDetailContainer}></Route>
+                <Route path='/date_select' component={DateSelectContainer}></Route>
+                <Route path="/section_artical_detail" component={SectionArticleDetail}></Route>
                 <Route component={ErrPage}></Route>
             </Switch>
         );
@@ -75,3 +89,7 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+

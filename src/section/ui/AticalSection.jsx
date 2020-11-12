@@ -11,14 +11,13 @@ export default (props) => {
     useEffect(() => {
         async function getData(){
             let result = await get({
-                url:'/api/section'
+                url:'/api/section_artical'
             })
             // console.log(result.data.list)
             setList(result.data.list.slice(0, currentPage * 5))
         }
         getData()
     },[currentPage])
-    // console.log(list)
     return (
         <AticalSectionWrap>
             <h2 lc={2}>推荐文章</h2>
@@ -27,7 +26,7 @@ export default (props) => {
                     list && list.map(item => {
                         return (
                             <li
-                            onClick={() => {history.push('/articleDetials')}}
+                            onClick={() => {history.push('/section_artical_detail',{id:item.id})}}
                             key={item.id}
                             >
                                 <div className='image'>

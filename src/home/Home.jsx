@@ -27,6 +27,7 @@ import {changeSelectedTab} from './actionCreator'
 )
 class Home extends Component {
     state = {
+        selectedTab:'community',
         hidden: false,
         fullScreen: true,
     }

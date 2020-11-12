@@ -1,36 +1,39 @@
 import axios from 'axios'
 
-const get = ({url}) => {
+const get = ({
+    url
+}) => {
     return new Promise((resolve, reject) => {
         axios({
-            url
-        })
-        .then(result => {
-            resolve(result)
-        })
-        .catch(err => {
-            reject(err)
-        })
+                url
+            })
+            .then(result => {
+                resolve(result)
+            })
+            .catch(err => {
+                reject(err)
+            })
     })
 }
 
-const post = ({url, data}) => {
+const post = ({
+    url,
+    data
+}) => {
     return new Promise((resolve, reject) => {
-        axios(
-            {
-                method:'post',
+        axios({
+                method: 'post',
                 url,
                 data,
-            }
-        )
-        .then(result => {
-            resolve(result)
-        })
-        .catch(err => {
-            reject(err)
-        })
+            })
+            .then(result => {
+                resolve(result)
+            })
+            .catch(err => {
+                reject(err)
+            })
     })
-    
+
 }
 
 export {

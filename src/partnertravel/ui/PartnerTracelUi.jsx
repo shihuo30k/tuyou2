@@ -5,7 +5,7 @@ import {
 
 import Search from './Search'
 // import Selected from './Selected'
-import Selected from './Selected copy'
+import Selected from './Selected'
 export default function PartnerTracelUi(props) {
   return (
     <PartnerWrap>

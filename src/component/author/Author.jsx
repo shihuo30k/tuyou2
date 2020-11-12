@@ -1,17 +1,22 @@
 import React from 'react'
 import {
+  NavLink,
+  useHistory
+} from 'react-router-dom'
+import {
   AuthorWrap,
   AuthorWraper,
   Follow
 } from './styledAuthor'
 
 export default function Author(props) {
+  const history = useHistory()
   // console.log(props.list);
   return (
     <>
     <AuthorWraper>
       <div>{props.leftTitle}</div>
-      <div>{props.rightTitle} &gt;</div>
+      <NavLink to="/mysubscibe"> <div>{props.rightTitle} &gt;</div></NavLink>
     </AuthorWraper> 
     
     <AuthorWrap className="authorWrap">
@@ -23,6 +28,7 @@ export default function Author(props) {
               return(
                 <li
                   key={v.use_id}
+                  onClick={()=>history.push('/pa')}
                 >
                 <h2>
                   <img src={v.picture} alt=""/>

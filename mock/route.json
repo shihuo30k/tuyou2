@@ -10,13 +10,17 @@
     "/api/jnlist":"/jnlist",
     "/api/question":"/question",
     "/api/countries":"/countries",
-    "/api/section":"/section",
+    "/api/section_artical":"/section_artical",
     "/api/qals":"/qals",
     "/api/partner":"/partner",
     "/api/article":"/article",
     "/api/videobanner":"/videobanner",
     "/api/videolist":"/videolist",
     "/api/recomindex":"/recomindex",
+    "api/todaytopic":"/todaytopic",
     "/api/zhuanti":"/zhuanti",
-    "/api/visa":"/visa"
+    "/api/newselected":"/newselected",
+    "/api/visa":"/visa",
+    "/api/section":"/section",
+    "/api/artical_detail":"/artical_detail"
 }

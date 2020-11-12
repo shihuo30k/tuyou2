@@ -166,6 +166,8 @@ const SrWrap = styled.div`
     }
 `
 
+const SrWrapElliP = ellipsis(styled.p``)
+
 const AticalSectionWrap = styled.div`
     h2 {
         margin-bottom: .2rem;
@@ -234,5 +236,6 @@ export {
     SrWrap,
     AticalSectionWrap,
     ElliP,
-    ElliDiv
+    ElliDiv,
+    SrWrapElliP
 }

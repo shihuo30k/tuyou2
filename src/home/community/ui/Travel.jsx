@@ -2,12 +2,16 @@ import React from 'react'
 
 import {useSelector} from 'react-redux'
 import {
+  useHistory
+} from 'react-router-dom';
+import {
   TravelWrap
 } from './styledCommunity';
 
 export default function Travel(props) {
+  const history = useHistory()
   const sta = useSelector(state => state.getIn(['community','travelList']))
-    // console.log(state.toJS());
+    // console.log(sta.toJS());
     let state = sta.toJS()
     let travel = state.travelnote
     // console.log(travel);
@@ -21,7 +25,9 @@ export default function Travel(props) {
     }
   return (
     
-    <TravelWrap>
+    <TravelWrap 
+      onClick={()=>history.push('/jxtravalnote',{id:"21065959"})}
+    >
       <h2>他的游记</h2>
       <div>
         <div>

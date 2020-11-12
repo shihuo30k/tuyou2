@@ -27,7 +27,7 @@ export default (props) => {
                     <p>已售5份</p>
                 </div>
             </div>
-            <SelectDate></SelectDate>
+            <SelectDate data={data}></SelectDate>
             <ProductDetail></ProductDetail>
         </SpecialDetailWrap>
     )

@@ -53,11 +53,13 @@ class Community extends Component {
     //选中DOM中定义的 .wrapper 进行初始化
     new BScroll(Partnerwrap, {
       scrollX: true,  //开启横向滚动
+      click: true,
     })
     const authorWrap = document.querySelector('.authorWrap')
     //选中DOM中定义的 .wrapper 进行初始化
     new BScroll(authorWrap, {
       scrollX: true,  //开启横向滚动
+      click: true,
     })
   }
      

@@ -39,18 +39,22 @@ export default function NavBar() {
           <span>签证专版</span>
         </li>
         </NavLink>
+        <NavLink to='/newselected'>
         <li>
           <p>
             <img src={img4} alt=""/>
           </p>
           <span>最新精华</span>
         </li>
+        </NavLink>
+        <NavLink to='/allselected'>
         <li>
           <p>
             <img src={img5} alt=""/>
           </p>
           <span>全部版面</span>
         </li>
+        </NavLink>
       </ul>
     </NavBarWrap>
   )

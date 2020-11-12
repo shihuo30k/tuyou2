@@ -5,6 +5,7 @@ module.exports = function() {
         author:require('./community/community-author.json'),
         qals:require('./community/community-qa.json'),
         partner: require('./community/community-partnership.json'),
+        newselected: require('./community/community-newselected.json'),
         visa: require('./community/community-visa.json'),
         inhot:require('./destination/inHot-data.json'),
         subject:require('./destination/subject-data.json'),
@@ -14,11 +15,14 @@ module.exports = function() {
         jnguide:require('./recommend/JNGuide-data.json'),
         jnlist:require('./recommend/JN-data.json'),
         question:require('./recommend/question.json'),
-        section: require('./recommend/SectionData.json'),
+        section_artical: require('./recommend/SectionArticalData.json'),
         article:require('./destination/ariticle-data.json'),
         videobanner:require('./recommend/video-banner.json'),
         videolist:require('./recommend/video-data.json'),
         recomindex:require('./recomindex/recomindex.json'),
-        zhuanti:require('./recommend/zhuanti_data.json')
+        zhuanti:require('./recommend/zhuanti_data.json'),
+        section:require('./recommend/SectionData.json'),
+        artical_detail:require('./recommend/atical_detail.json'),
+        todaytopic:require('./recomindex/todaytopic.json'),
     }
 }

@@ -9,8 +9,10 @@ export default function PartnerList(props) {
   let state = props.list.toJS().list
   // console.log(props.list.toJS().list);
   return (
-    <PartnerListWrap>
-      <ul>
+    <PartnerListWrap
+      
+    >
+      <ul style={{height:window.innerHeight}}>
 
         {
           state && state.map(v=>{
