@@ -5,7 +5,7 @@ import {SrWrap, SrWrapElliP} from './StyledSection'
 
 export default () => {
     const [list, setList] = useState([])
-    const [page] = useState(4)
+    // const [page] = useState(4)
     const [colorList] = useState([
         {
             tColor:'#fcdde5',

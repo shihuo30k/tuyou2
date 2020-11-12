@@ -22,6 +22,7 @@ module.exports = function() {
         recomindex:require('./recomindex/recomindex.json'),
         zhuanti:require('./recommend/zhuanti_data.json'),
         section:require('./recommend/SectionData.json'),
-        artical_detail:require('./recommend/atical_detail.json')
+        artical_detail:require('./recommend/atical_detail.json'),
+        todaytopic:require('./recomindex/todaytopic.json'),
     }
 }

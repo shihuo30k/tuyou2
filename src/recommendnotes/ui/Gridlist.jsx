@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link} from "react-router-dom" 
+
 import {Gridlistcon} from './styledRecomindex'
 const Gridlist =()=>{
     return(
         <Gridlistcon>
             <ul>
-                <Link to="/todaytopic">
+                
                 <li>
                     <img src={`http://yl.charmiot.com/travel_qygbz1/images/%E5%9F%8E%E5%B8%82/u883.svg`} alt=""/>
                     <span>游记攻略</span>
                 </li>
-                </Link>
+                
                 <li>
                     <img src={`http://yl.charmiot.com/travel_qygbz1/images/%E5%9F%8E%E5%B8%82/u877.svg`} alt=""/>
                     <span>国家指南</span>
